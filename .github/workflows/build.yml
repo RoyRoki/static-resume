@@ -2,7 +2,7 @@ name: Build and Deploy Resume
 
 on:
   push:
-    branches: [ master ]   # change to 'main' if your repo uses main
+    branches: [ master ]   # change to 'main' if needed
 
 jobs:
   build:
@@ -23,22 +23,25 @@ jobs:
             texlive-lang-english
 
       - name: Compile resume.tex to PDF
-        run: pdflatex -interaction=nonstopmode resume.tex
+        run: |
+          pdflatex -interaction=nonstopmode resume.tex
+          pdflatex -interaction=nonstopmode resume.tex  # second run for references/bookmarks
 
       - name: Update sitemap.xml lastmod date
         run: |
           TODAY=$(date +%Y-%m-%d)
           sed -i "s|<lastmod>.*</lastmod>|<lastmod>${TODAY}</lastmod>|g" sitemap.xml || true
 
-      - name: Copy site files
+      - name: Prepare site files
         run: |
-          cp resume.pdf ./resume.pdf
-          cp index.html ./index.html
-          cp robots.txt ./robots.txt
-          cp sitemap.xml ./sitemap.xml
+          mkdir public
+          mv resume.pdf public/
+          cp index.html public/
+          cp robots.txt public/
+          cp sitemap.xml public/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: ./public
