@@ -1,0 +1,41 @@
+name: Build and Deploy Resume
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install LaTeX
+        run: sudo apt-get update && sudo apt-get install -y \
+             texlive-latex-base \
+             texlive-latex-extra \
+             texlive-fonts-recommended \
+             texlive-fonts-extra
+
+      - name: Compile resume.tex to PDF
+        run: pdflatex -interaction=nonstopmode resume.tex
+
+      - name: Update sitemap.xml lastmod date
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          sed -i "s|<lastmod>.*</lastmod>|<lastmod>${TODAY}</lastmod>|g" sitemap.xml
+
+      - name: Copy site files
+        run: |
+          cp resume.pdf ./resume.pdf
+          cp index.html ./index.html
+          cp robots.txt ./robots.txt
+          cp sitemap.xml ./sitemap.xml
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
