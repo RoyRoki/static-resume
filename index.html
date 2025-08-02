@@ -58,6 +58,14 @@
     iframe { width: 100%; height: 100%; border: none; }
     .seo-content { display: none; }
   </style>
+
+  <script>
+    // Detect if the user is on a mobile device
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      // Redirect mobile users directly to the PDF
+      window.location.href = "resume.pdf";
+    }
+  </script>
 </head>
 <body>
   <!-- Embed resume -->
