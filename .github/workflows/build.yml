@@ -28,6 +28,7 @@ jobs:
         run: |
           pdflatex -interaction=nonstopmode resume.tex
           pdflatex -interaction=nonstopmode resume.tex
+          mv resume.pdf roki_roy_resume.pdf   # 🔹 Rename output file
 
       - name: Update sitemap.xml lastmod date
         run: |
@@ -37,9 +38,9 @@ jobs:
       - name: Prepare site files
         run: |
           mkdir public
-          mv resume.pdf public/
+          mv roki_roy_resume.pdf public/
           cp index.html robots.txt sitemap.xml public/
-          echo "resume.rokhub.shop" > public/CNAME   # 🔹 This ensures custom domain persists
+          echo "resume.rokhub.shop" > public/CNAME   # 🔹 Keeps custom domain
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
