@@ -29,11 +29,17 @@ jobs:
           pdflatex -interaction=nonstopmode resume.tex
           pdflatex -interaction=nonstopmode resume.tex
 
+      - name: Update sitemap.xml lastmod date
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          sed -i "s|<lastmod>.*</lastmod>|<lastmod>${TODAY}</lastmod>|g" sitemap.xml || true
+
       - name: Prepare site files
         run: |
           mkdir public
           mv resume.pdf public/
           cp index.html robots.txt sitemap.xml public/
+          echo "resume.rokhub.shop" > public/CNAME   # 🔹 This ensures custom domain persists
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
