@@ -2,7 +2,7 @@ name: Build and Deploy Resume
 
 on:
   push:
-    branches: [ master ]   # change to 'main' if that's your branch
+    branches: [ master ]   # change to 'main' if your repo uses main
 
 jobs:
   build:
@@ -13,12 +13,14 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install LaTeX
-        run: sudo apt-get update && sudo apt-get install -y \
-             texlive-latex-base \
-             texlive-latex-extra \
-             texlive-fonts-recommended \
-             texlive-fonts-extra \
-             texlive-lang-english
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            texlive-latex-base \
+            texlive-latex-extra \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            texlive-lang-english
 
       - name: Compile resume.tex to PDF
         run: pdflatex -interaction=nonstopmode resume.tex
