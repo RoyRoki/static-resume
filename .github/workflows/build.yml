@@ -2,7 +2,7 @@ name: Build and Deploy Resume
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]   # change to 'main' if that's your branch
 
 jobs:
   build:
@@ -17,7 +17,8 @@ jobs:
              texlive-latex-base \
              texlive-latex-extra \
              texlive-fonts-recommended \
-             texlive-fonts-extra
+             texlive-fonts-extra \
+             texlive-lang-english
 
       - name: Compile resume.tex to PDF
         run: pdflatex -interaction=nonstopmode resume.tex
@@ -25,7 +26,7 @@ jobs:
       - name: Update sitemap.xml lastmod date
         run: |
           TODAY=$(date +%Y-%m-%d)
-          sed -i "s|<lastmod>.*</lastmod>|<lastmod>${TODAY}</lastmod>|g" sitemap.xml
+          sed -i "s|<lastmod>.*</lastmod>|<lastmod>${TODAY}</lastmod>|g" sitemap.xml || true
 
       - name: Copy site files
         run: |
