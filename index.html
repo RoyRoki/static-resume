@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Roki Roy Resume | Full Stack Developer</title>
-  <meta name="description" content="Official resume of Roki Roy - Full Stack Developer experienced in Flutter, Golang, React, Node.js, scalable architecture, and wearable app development.">
-  <meta name="keywords" content="Roki Roy, Roki, Full Stack Developer Resume, Software Engineer, Flutter Developer, Golang Developer, React Developer, Node.js Developer, BCA Student">
+  <title id="page-title">Roki Roy Resume | Full Stack Developer</title>
+  <meta name="description" id="page-description" content="Official resume of Roki Roy - Full Stack Developer experienced in Flutter, Golang, React, Node.js, scalable architecture, and wearable app development.">
+  <meta name="keywords" id="page-keywords" content="Roki Roy, Roki, Full Stack Developer Resume, Software Engineer, Flutter Developer, Golang Developer, React Developer, Node.js Developer, BCA Student">
   <meta name="author" content="Roki Roy">
   <meta name="robots" content="index, follow">
 
@@ -12,23 +12,23 @@
   <link rel="icon" type="image/png" href="thumbnail.png">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://resume.rokhub.shop/">
+  <link rel="canonical" id="canonical-url" href="https://resume.rokhub.shop/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Roki Roy - Full Stack Developer Resume">
-  <meta property="og:description" content="View and download the official resume of Roki Roy, Full Stack Developer specializing in Flutter, Golang, and scalable systems.">
+  <meta property="og:title" id="og-title" content="Roki Roy - Full Stack Developer Resume">
+  <meta property="og:description" id="og-description" content="View and download the official resume of Roki Roy, Full Stack Developer specializing in Flutter, Golang, and scalable systems.">
   <meta property="og:type" content="profile">
-  <meta property="og:url" content="https://resume.rokhub.shop/">
+  <meta property="og:url" id="og-url" content="https://resume.rokhub.shop/">
   <meta property="og:image" content="https://resume.rokhub.shop/thumbnail.png">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Roki Roy Resume">
-  <meta name="twitter:description" content="Full Stack Developer skilled in Flutter, Golang, React, and Node.js. Download my resume.">
+  <meta name="twitter:title" id="twitter-title" content="Roki Roy Resume">
+  <meta name="twitter:description" id="twitter-description" content="Full Stack Developer skilled in Flutter, Golang, React, and Node.js. Download my resume.">
   <meta name="twitter:image" content="https://resume.rokhub.shop/thumbnail.png">
 
   <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
+  <script type="application/ld+json" id="schema-data">
   {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -54,27 +54,356 @@
   </script>
 
   <style>
-    html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; }
-    iframe { width: 100%; height: 100%; border: none; }
-    .seo-content { display: none; }
+    html, body { 
+      height: 100%; 
+      margin: 0; 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    iframe { 
+      width: 100%; 
+      height: 100%; 
+      border: none; 
+    }
+    
+    .seo-content { 
+      display: none; 
+    }
+
+    /* About Page Styles */
+    #about-page {
+      display: none;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      padding: 60px 20px;
+    }
+
+    .about-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      padding: 50px 40px;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 50px;
+      padding-bottom: 30px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .about-header h1 {
+      font-size: 2.5em;
+      margin: 0 0 10px 0;
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+
+    .about-header p {
+      font-size: 1.1em;
+      color: #666;
+      margin: 0;
+    }
+
+    .resume-section {
+      margin-bottom: 40px;
+    }
+
+    .resume-section h2 {
+      font-size: 1.5em;
+      margin: 0 0 20px 0;
+      color: #2c3e50;
+      font-weight: 600;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .resume-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .resume-links li {
+      margin-bottom: 12px;
+    }
+
+    .resume-links a {
+      display: inline-block;
+      color: #2563eb;
+      text-decoration: none;
+      font-size: 1.05em;
+      padding: 8px 0;
+      transition: all 0.2s ease;
+      border-bottom: 1px solid transparent;
+    }
+
+    .resume-links a:hover {
+      color: #1e40af;
+      border-bottom-color: #1e40af;
+      transform: translateX(5px);
+    }
+
+    .resume-links a:before {
+      content: "→ ";
+      margin-right: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .resume-links a:hover:before {
+      transform: translateX(3px);
+    }
+
+    .contact-section {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 2px solid #e0e0e0;
+    }
+
+    .contact-details {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0 0;
+    }
+
+    .contact-details li {
+      margin-bottom: 12px;
+      font-size: 1.05em;
+      color: #555;
+    }
+
+    .contact-details a {
+      color: #2563eb;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .contact-details a:hover {
+      color: #1e40af;
+      text-decoration: underline;
+    }
+
+    .contact-details strong {
+      color: #1a1a1a;
+      font-weight: 600;
+      display: inline-block;
+      min-width: 100px;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        padding: 30px 20px;
+      }
+
+      .about-header h1 {
+        font-size: 2em;
+      }
+
+      .resume-section h2 {
+        font-size: 1.3em;
+      }
+    }
   </style>
 
   <script>
-    // Detect if the user is on a mobile device
-    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-      // Redirect mobile users directly to the PDF
-      window.location.href = "roki_roy_resume.pdf";
+    // Mobile redirect - must happen before page renders
+    (function() {
+      const path = window.location.pathname;
+      const pdfRoutes = {
+        '/': 'roki_roy_resume.pdf',
+        '/web': 'roki_roy_resume_web.pdf',
+        '/backend': 'roki_roy_resume_backend.pdf',
+        '/app': 'roki_roy_resume_app.pdf',
+        '/devops': 'roki_roy_resume_devops.pdf'
+      };
+      
+      if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) && pdfRoutes[path]) {
+        window.location.href = pdfRoutes[path];
+      }
+    })();
+
+    // Route configuration
+    const routes = {
+      '/': {
+        pdf: 'roki_roy_resume.pdf',
+        title: 'Roki Roy Resume | Full Stack Developer',
+        description: 'Official resume of Roki Roy - Full Stack Developer experienced in Flutter, Golang, React, Node.js, scalable architecture, and wearable app development.',
+        keywords: 'Roki Roy, Roki, Full Stack Developer Resume, Software Engineer, Flutter Developer, Golang Developer, React Developer, Node.js Developer, BCA Student',
+        jobTitle: 'Full Stack Developer',
+        ogTitle: 'Roki Roy - Full Stack Developer Resume',
+        ogDescription: 'View and download the official resume of Roki Roy, Full Stack Developer specializing in Flutter, Golang, and scalable systems.'
+      },
+      '/web': {
+        pdf: 'roki_roy_resume_web.pdf',
+        title: 'Roki Roy Resume | Frontend Developer',
+        description: 'Official resume of Roki Roy - Frontend Developer specializing in React, JavaScript, TypeScript, and modern web development.',
+        keywords: 'Roki Roy, Frontend Developer Resume, React Developer, JavaScript Developer, TypeScript Developer, Web Developer',
+        jobTitle: 'Frontend Developer',
+        ogTitle: 'Roki Roy - Frontend Developer Resume',
+        ogDescription: 'View and download the official resume of Roki Roy, Frontend Developer specializing in React, JavaScript, and TypeScript.'
+      },
+      '/backend': {
+        pdf: 'roki_roy_resume_backend.pdf',
+        title: 'Roki Roy Resume | Backend Developer',
+        description: 'Official resume of Roki Roy - Backend Developer experienced in Golang, Node.js, Spring Boot, microservices, and scalable API design.',
+        keywords: 'Roki Roy, Backend Developer Resume, Golang Developer, Node.js Developer, API Developer, Microservices Developer',
+        jobTitle: 'Backend Developer',
+        ogTitle: 'Roki Roy - Backend Developer Resume',
+        ogDescription: 'View and download the official resume of Roki Roy, Backend Developer specializing in Golang, Node.js, and microservices architecture.'
+      },
+      '/app': {
+        pdf: 'roki_roy_resume_app.pdf',
+        title: 'Roki Roy Resume | Mobile Developer',
+        description: 'Official resume of Roki Roy - Mobile Developer specializing in Flutter and Swift, building cross-platform and native iOS applications.',
+        keywords: 'Roki Roy, Mobile Developer Resume, Flutter Developer, Swift Developer, iOS Developer, Cross-platform Developer',
+        jobTitle: 'Mobile Developer',
+        ogTitle: 'Roki Roy - Mobile Developer Resume',
+        ogDescription: 'View and download the official resume of Roki Roy, Mobile Developer specializing in Flutter and Swift for iOS and cross-platform apps.'
+      },
+      '/devops': {
+        pdf: 'roki_roy_resume_devops.pdf',
+        title: 'Roki Roy Resume | DevOps Engineer',
+        description: 'Official resume of Roki Roy - DevOps Engineer experienced in Docker, AWS, CI/CD pipelines, infrastructure automation, and cloud deployment.',
+        keywords: 'Roki Roy, DevOps Engineer Resume, Docker, AWS, CI/CD, Infrastructure Engineer, Cloud Engineer',
+        jobTitle: 'DevOps Engineer',
+        ogTitle: 'Roki Roy - DevOps Engineer Resume',
+        ogDescription: 'View and download the official resume of Roki Roy, DevOps Engineer specializing in Docker, AWS, CI/CD, and infrastructure automation.'
+      },
+      '/about': {
+        page: 'about'
+      }
+    };
+
+    // Get current path
+    const currentPath = window.location.pathname;
+    const route = routes[currentPath] || routes['/'];
+
+    // Update meta tags dynamically
+    function updateMetaTags(routeConfig) {
+      const baseUrl = 'https://resume.rokhub.shop';
+      const fullUrl = baseUrl + currentPath;
+
+      document.getElementById('page-title').textContent = routeConfig.title;
+      document.getElementById('page-description').setAttribute('content', routeConfig.description);
+      document.getElementById('page-keywords').setAttribute('content', routeConfig.keywords);
+      document.getElementById('canonical-url').setAttribute('href', fullUrl);
+      document.getElementById('og-title').setAttribute('content', routeConfig.ogTitle);
+      document.getElementById('og-description').setAttribute('content', routeConfig.ogDescription);
+      document.getElementById('og-url').setAttribute('content', fullUrl);
+      document.getElementById('twitter-title').setAttribute('content', routeConfig.title);
+      document.getElementById('twitter-description').setAttribute('content', routeConfig.description);
+
+      if (routeConfig.jobTitle) {
+        const schemaScript = document.getElementById('schema-data');
+        const schemaData = JSON.parse(schemaScript.textContent);
+        schemaData.jobTitle = routeConfig.jobTitle;
+        schemaData.url = fullUrl;
+        schemaScript.textContent = JSON.stringify(schemaData);
+      }
     }
+
+    // Handle routing
+    function handleRoute() {
+      if (route.page === 'about') {
+        // Show about page
+        document.getElementById('resume-viewer').style.display = 'none';
+        document.getElementById('about-page').style.display = 'block';
+        updateMetaTags({
+          title: 'Roki Roy | About',
+          description: 'About Roki Roy - Full Stack Developer. View all specialized resumes and contact information.',
+          keywords: 'Roki Roy, About, Contact, Resume Links',
+          ogTitle: 'Roki Roy | About',
+          ogDescription: 'About Roki Roy - Full Stack Developer. View all specialized resumes and contact information.'
+        });
+      } else {
+        // Show PDF viewer
+        document.getElementById('resume-viewer').style.display = 'block';
+        document.getElementById('about-page').style.display = 'none';
+        const iframe = document.getElementById('pdf-viewer');
+        iframe.src = route.pdf;
+        updateMetaTags(route);
+      }
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', handleRoute);
   </script>
 </head>
 <body>
-  <!-- Embed resume -->
-  <iframe src="roki_roy_resume.pdf"></iframe>
+  <!-- PDF Resume Viewer -->
+  <div id="resume-viewer">
+    <iframe id="pdf-viewer" src="roki_roy_resume.pdf"></iframe>
+  </div>
+
+  <!-- About Page -->
+  <div id="about-page">
+    <div class="about-container">
+      <div class="about-header">
+        <h1>Roki Roy</h1>
+        <p>Full Stack Developer</p>
+      </div>
+
+      <div class="resume-section">
+        <h2>Resume Versions</h2>
+        <ul class="resume-links">
+          <li>
+            <a href="/">Full-Stack Developer</a>
+          </li>
+          <li>
+            <a href="/web">Frontend Developer</a>
+          </li>
+          <li>
+            <a href="/backend">Backend Developer</a>
+          </li>
+          <li>
+            <a href="/app">Mobile Developer (Flutter + Swift)</a>
+          </li>
+          <li>
+            <a href="/devops">DevOps Engineer</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact-section">
+        <h2>Contact</h2>
+        <ul class="contact-details">
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:rokiroydev@gmail.com">rokiroydev@gmail.com</a>
+          </li>
+          <li>
+            <strong>Phone:</strong>
+            <a href="tel:+91-980-088-13-00">+91 9800 881 300</a>
+          </li>
+          <li>
+            <strong>Location:</strong>
+            <span>Siliguri, India</span>
+          </li>
+          <li>
+            <strong>LinkedIn:</strong>
+            <a href="https://linkedin.com/in/rokiroy" target="_blank" rel="noopener noreferrer">linkedin.com/in/rokiroy</a>
+          </li>
+          <li>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/royroki" target="_blank" rel="noopener noreferrer">github.com/royroki</a>
+          </li>
+          <li>
+            <strong>Portfolio:</strong>
+            <a href="https://dev.rokhub.shop/" target="_blank" rel="noopener noreferrer">dev.rokhub.shop</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <!-- Hidden SEO Content -->
   <div class="seo-content">
-    <h1>Roki Roy Resume - Full Stack Developer</h1>
-    <p>
+    <h1 id="seo-title">Roki Roy Resume - Full Stack Developer</h1>
+    <p id="seo-content">
       Welcome to the official online resume of <strong>Roki Roy</strong>, a passionate 
       <em>Full Stack Developer</em> specializing in <strong>clean architecture</strong>, 
       <strong>scalable applications</strong>, and cross-platform development.
