@@ -65,7 +65,7 @@ jobs:
           cp index.html robots.txt sitemap.xml dp.jpeg public/
           # Copy directory HTML files (web, backend, app, devops, about)
           cp -r web backend app devops about public/
-          echo "resume.rokhub.shop" > public/CNAME   # 🔹 Keeps custom domain
+          echo "resume.rokiroy.site" > public/CNAME   # 🔹 Keeps custom domain
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
