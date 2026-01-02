@@ -62,7 +62,7 @@ jobs:
           # Move PDFs to public directory
           mv roki_roy_resume.pdf roki_roy_resume_web.pdf roki_roy_resume_backend.pdf roki_roy_resume_app.pdf roki_roy_resume_devops.pdf public/
           # Copy root HTML files
-          cp index.html robots.txt sitemap.xml thumbnail.png public/
+          cp index.html robots.txt sitemap.xml dp.jpeg public/
           # Copy directory HTML files (web, backend, app, devops, about)
           cp -r web backend app devops about public/
           echo "resume.rokhub.shop" > public/CNAME   # 🔹 Keeps custom domain
