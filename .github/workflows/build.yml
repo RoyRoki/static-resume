@@ -66,6 +66,15 @@ jobs:
           # Copy directory HTML files (web, backend, app, devops, about)
           cp -r web backend app devops about public/
           echo "resume.rokiroy.site" > public/CNAME   # 🔹 Keeps custom domain
+          
+          # Setup /md route
+          mkdir -p public/md
+          cp md.html public/md/index.html
+          cp resume.md public/resume.md
+          cp resume.md public/md/resume.md
+          
+          # Copy server files (optional, if one wants to download them)
+          cp package.json server.js public/ || true
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
