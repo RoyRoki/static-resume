@@ -34,7 +34,7 @@ curl http://localhost:3001/json
 ## For AI Agents
 
 This resume is AI-agent friendly! Simply fetch:
-- `https://resume.rokiroy.site/md` for markdown format
-- `https://resume.rokiroy.site/json` for structured JSON data
+- `https://royroki.github.io/static-resume/md` for markdown format
+- `https://royroki.github.io/static-resume/json` for structured JSON data (if server deployed)
 
 Both endpoints include CORS headers for easy access from any origin.

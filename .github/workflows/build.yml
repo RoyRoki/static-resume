@@ -65,7 +65,7 @@ jobs:
           cp index.html robots.txt sitemap.xml dp.jpeg public/
           # Copy directory HTML files (web, backend, app, devops, about)
           cp -r web backend app devops about public/
-          echo "resume.rokiroy.site" > public/CNAME   # 🔹 Keeps custom domain
+          # echo "resume.rokiroy.site" > public/CNAME   # 🔹 Removed custom domain per user request
           
           # Setup /md route
           mkdir -p public/md
