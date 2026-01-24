@@ -69,7 +69,9 @@ jobs:
           
           # Setup /md route
           mkdir -p public/md
+          touch public/.nojekyll
           cp md.html public/md/index.html
+          cp md.html public/md.html  # Fallback
           cp resume.md public/resume.md
           cp resume.md public/md/resume.md
           
