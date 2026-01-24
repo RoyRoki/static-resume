@@ -75,6 +75,10 @@ jobs:
           cp resume.md public/resume.md
           cp resume.md public/md/resume.md
           
+          # Setup /json route (static)
+          cp resume.json public/resume.json
+          cp resume.json public/json
+          
           # Copy server files (optional, if one wants to download them)
           cp package.json server.js public/ || true
 
