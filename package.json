@@ -1,0 +1,16 @@
+{
+  "name": "static-resume",
+  "version": "1.0.0",
+  "description": "Resume website with markdown endpoint for AI agents",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["resume", "static-site"],
+  "author": "Roki Roy",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
