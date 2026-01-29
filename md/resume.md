@@ -36,31 +36,46 @@ Full-stack developer with hands-on experience shipping production Flutter, React
 
 ## Projects
 
-### ZenliAI – AI-Powered Content Generation Platform
+### The Formula Shop
+**Role:** Frontend Development (Team Project at Fordel Studios)
+- Korean beauty product e-commerce website featuring modern design, product catalog, and seamless shopping experience.
+- Built responsive e-commerce website with product catalog, cart functionality, and modern design using Next.js and Tailwind CSS.
+- **Stack:** Next.js, Tailwind CSS, E-commerce, Responsive Design
 
-- Built full-stack platform enabling users to generate eBooks, SVG, clipart, and SEO content with integrated Pinterest automation for pin upload.
-- Architected complex backend in Golang with GenAI API integration and S3 for asset storage.
-- **Stack:** Golang, React, GenAI APIs, AWS S3, Pinterest API
+### emSigner Digital Signature
+**Role:** Flutter Mobile Development (Developed at Fordel Studios)
+- Cross-platform mobile application for secure digital signatures on Android and iOS.
+- Developed Flutter-based mobile application with robust security features, API integrations, and native performance.
+- **Stack:** Flutter, Dart, API Integration, Android, iOS
 
-### BattleManager – Tournament Management PWA
+### wowfy - 3D Portfolio
+**Role:** Full-Stack & 3D Development
+- 3D portfolio website showcasing modern web development capabilities with Three.js, GSAP animations, and immersive user experience.
+- Created immersive 3D portfolio using Three.js for 3D graphics, GSAP for advanced animations, and Framer Motion.
+- **Live:** [royroki.github.io/wowfy](https://royroki.github.io/wowfy/)
+- **Stack:** Next.js, Three.js, GSAP, Framer Motion, Tailwind CSS
 
-- Built a tournament management PWA with real-time updates and messaging using React, Firebase, and Capacitor.
-- Implemented real-time messaging system with Firebase for instant tournament updates and player communication.
+### Astra Terra Properties
+**Role:** Full-Stack Development
+- A dynamic, one-stop-shop, full-service real estate provider dedicated to delivering exceptional property solutions across Dubai, UAE.
+- Built comprehensive real estate platform with interactive maps, property search, filters, and seamless user experience.
+- **Live:** [astraterra.ae](https://www.astraterra.ae/)
+- **Stack:** Next.js, Tailwind CSS, GSAP, Leaflet Maps, Firebase
 
-### LetsGo – Tag-Based Chatting App
-**GitHub:** [github.com/RoyRoki/LetsGo](https://github.com/RoyRoki/LetsGo)
-
-- Built real-time chat app using Golang microservices.
-- Used gRPC + Protocol buffers for sub-200ms message latency.
-- **Stack:** Golang, Microservices, gRPC, Protobuf, Docker
+### Dubai Luxury Apartments
+**Role:** UI/UX Design & Frontend Development
+- Premium landing page for exceptional properties in Dubai, featuring smooth scroll animations and award-worthy aesthetics.
+- Designed and developed award-worthy landing page with smooth scroll animations and premium aesthetic.
+- **Live:** [royroki.github.io/dubai-luxury-apartments](https://royroki.github.io/dubai-luxury-apartments/)
+- **Stack:** Next.js, GSAP, Framer Motion, Tailwind CSS, Smooth Scroll
 
 ---
 
 ## Technologies
 
-**Primary:** Golang, React, Flutter, PostgreSQL, Docker
+**Primary:** Golang, Next.js, React, Flutter, PostgreSQL, Docker
 
-**Secondary:** Java (Spring Boot), JavaScript (ES6+), TypeScript, Swift, Firebase, AWS, gRPC
+**Secondary:** JavaScript (ES6+), TypeScript, Swift, Firebase, AWS, gRPC
 
 ---
 

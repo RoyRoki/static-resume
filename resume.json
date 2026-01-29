@@ -38,52 +38,90 @@
     ],
     "projects": [
         {
-            "name": "ZenliAI – AI-Powered Content Generation Platform",
-            "description": "Built full-stack platform enabling users to generate eBooks, SVG, clipart, and SEO content with integrated Pinterest automation for pin upload",
+            "name": "The Formula Shop",
+            "description": "Korean beauty product e-commerce website featuring modern design, product catalog, and seamless shopping experience. Team Project at Fordel Studios.",
+            "url": "https://theformulashop.com/",
             "highlights": [
-                "Architected complex backend in Golang with GenAI API integration and S3 for asset storage"
+                "Built responsive e-commerce website with product catalog, cart functionality, and modern design using Next.js and Tailwind CSS"
             ],
             "stack": [
-                "Golang",
-                "React",
-                "GenAI APIs",
-                "AWS S3",
-                "Pinterest API"
+                "Next.js",
+                "Tailwind CSS",
+                "E-commerce",
+                "Responsive Design"
             ]
         },
         {
-            "name": "BattleManager – Tournament Management PWA",
-            "description": "Built a tournament management PWA with real-time updates and messaging using React, Firebase, and Capacitor",
+            "name": "emSigner Digital Signature",
+            "description": "Cross-platform mobile application for secure digital signatures on Android and iOS. Developed at Fordel Studios.",
+            "url": "https://play.google.com/store/apps/details?id=com.emudhra.emSigner&hl=en_IN",
             "highlights": [
-                "Implemented real-time messaging system with Firebase for instant tournament updates and player communication"
+                "Developed Flutter-based mobile application with robust security features, API integrations, and native performance"
+            ],
+            "stack": [
+                "Flutter",
+                "Dart",
+                "API Integration",
+                "Android",
+                "iOS"
             ]
         },
         {
-            "name": "LetsGo – Tag-Based Chatting App",
-            "url": "https://github.com/RoyRoki/LetsGo",
-            "description": "Built real-time chat app using Golang microservices",
+            "name": "wowfy - 3D Portfolio",
+            "description": "3D portfolio website showcasing modern web development capabilities with Three.js, GSAP animations, and immersive user experience.",
+            "url": "https://royroki.github.io/wowfy/",
             "highlights": [
-                "Used gRPC + Protocol buffers for sub-200ms message latency"
+                "Created immersive 3D portfolio using Three.js for 3D graphics, GSAP for advanced animations, and Framer Motion"
             ],
             "stack": [
-                "Golang",
-                "Microservices",
-                "gRPC",
-                "Protobuf",
-                "Docker"
+                "Next.js",
+                "Three.js",
+                "GSAP",
+                "Framer Motion",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "name": "Astra Terra Properties",
+            "description": "A dynamic, one-stop-shop, full-service real estate provider dedicated to delivering exceptional property solutions across Dubai, UAE.",
+            "url": "https://www.astraterra.ae/",
+            "highlights": [
+                "Built comprehensive real estate platform with interactive maps, property search, filters, and seamless user experience"
+            ],
+            "stack": [
+                "Next.js",
+                "Tailwind CSS",
+                "GSAP",
+                "Leaflet Maps",
+                "Firebase"
+            ]
+        },
+        {
+            "name": "Dubai Luxury Apartments",
+            "description": "Premium landing page for exceptional properties in Dubai, featuring smooth scroll animations and award-worthy aesthetics.",
+            "url": "https://royroki.github.io/dubai-luxury-apartments/",
+            "highlights": [
+                "Designed and developed award-worthy landing page with smooth scroll animations and premium aesthetic"
+            ],
+            "stack": [
+                "Next.js",
+                "GSAP",
+                "Framer Motion",
+                "Tailwind CSS",
+                "Smooth Scroll"
             ]
         }
     ],
     "technologies": {
         "primary": [
             "Golang",
+            "Next.js",
             "React",
             "Flutter",
             "PostgreSQL",
             "Docker"
         ],
         "secondary": [
-            "Java (Spring Boot)",
             "JavaScript (ES6+)",
             "TypeScript",
             "Swift",
@@ -94,7 +132,7 @@
     },
     "education": [
         {
-            "institution": "University of North Bengal",
+            "institution": "Siliguri College",
             "degree": "BCA (pursuing)",
             "period": "Sept 2024 – May 2027"
         }
