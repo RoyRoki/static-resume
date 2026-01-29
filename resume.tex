@@ -3,10 +3,10 @@
 % --- Preamble ---
 \usepackage[
     ignoreheadfoot,
-    top=2cm,
-    bottom=2cm,
-    left=2cm,
-    right=2cm,
+    top=1.0cm,
+    bottom=1.0cm,
+    left=1.0cm,
+    right=1.0cm,
     footskip=1.0cm
 ]{geometry}
 \usepackage{titlesec}
@@ -43,13 +43,13 @@
 \setlength{\parindent}{0pt}
 \pagenumbering{gobble}
 
-\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{2pt}\titlerule]
-\titlespacing{\section}{-1pt}{0.35cm}{0.25cm}
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.2cm}{0.1cm}
 \renewcommand\labelitemi{\small$\bullet$}
 
 % Custom environments
 \newenvironment{highlights}{
-    \begin{itemize}[topsep=0.15cm, parsep=0.10cm, itemsep=0pt, leftmargin=10pt]
+    \begin{itemize}[topsep=0cm, parsep=0cm, itemsep=0pt, leftmargin=10pt]
 }{
     \end{itemize}
 }
@@ -65,7 +65,7 @@
     \endonecolentry
 }
 \newenvironment{header}{
-    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.3}
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.1}
 }{\par\kern\topsep}
 
 % --- Document ---
@@ -75,7 +75,7 @@
 \begin{header}
     \fontsize{24pt}{24pt}\selectfont \textbf{Roki Roy}
 
-    \vspace{4pt}
+    \vspace{2pt}
 
     \normalsize
     Siliguri \textbar\ 
@@ -130,45 +130,74 @@
 % Projects
 \section{Projects}
 
-\begin{twocolentry}{}
-    \textbf{ZenliAI – AI-Powered Content Generation Platform}
+\begin{twocolentry}{\href{https://theformulashop.com/}{theformulashop.com}}
+    \textbf{\href{https://theformulashop.com/}{The Formula Shop}}
 \end{twocolentry}
 \begin{onecolentry}
     \begin{highlights}
-        \item Built full-stack platform enabling users to generate eBooks, SVG, clipart, and SEO content with integrated Pinterest automation for pin upload.
-        \item Architected complex backend in Golang with GenAI API integration and S3 for asset storage.
-        \item \textbf{Stack:} Golang, React, GenAI APIs, AWS S3, Pinterest API
+        \item \textbf{Role:} Frontend Development (Team Project at Fordel Studios)
+        \item Korean beauty product e-commerce website featuring modern design, product catalog, and seamless shopping experience.
+        \item Built responsive e-commerce website with product catalog, cart functionality, and modern design using Next.js and Tailwind CSS.
+        \item \textbf{Stack:} Next.js, Tailwind CSS, E-commerce, Responsive Design
     \end{highlights}
 \end{onecolentry}
 
-\begin{twocolentry}{}
-    \textbf{BattleManager – Tournament Management PWA}
+\begin{twocolentry}{\href{https://play.google.com/store/apps/details?id=com.emudhra.emSigner&hl=en_IN}{Google Play}}
+    \textbf{\href{https://play.google.com/store/apps/details?id=com.emudhra.emSigner&hl=en_IN}{emSigner Digital Signature}}
 \end{twocolentry}
 \begin{onecolentry}
     \begin{highlights}
-        \item Built a tournament management PWA with real-time updates and messaging using React, Firebase, and Capacitor.
-        \item Implemented real-time messaging system with Firebase for instant tournament updates and player communication.
+        \item \textbf{Role:} Flutter Mobile Development (Developed at Fordel Studios)
+        \item Cross-platform mobile application for secure digital signatures on Android and iOS.
+        \item Developed Flutter-based mobile application with robust security features, API integrations, and native performance.
+        \item \textbf{Stack:} Flutter, Dart, API Integration, Android, iOS
     \end{highlights}
 \end{onecolentry}
 
-\begin{twocolentry}{\href{https://github.com/RoyRoki/LetsGo}{github.com/RoyRoki/LetsGo}}
-    \textbf{LetsGo – Tag-Based Chatting App}
+\begin{twocolentry}{\href{https://royroki.github.io/wowfy/}{royroki.github.io/wowfy}}
+    \textbf{\href{https://royroki.github.io/wowfy/}{wowfy - 3D Portfolio}}
 \end{twocolentry}
 \begin{onecolentry}
     \begin{highlights}
-        \item Built real-time chat app using Golang microservices.
-        \item Used gRPC + Protocol buffers for sub-200ms message latency.
-        \item \textbf{Stack:} Golang, Microservices, gRPC, Protobuf, Docker \end{highlights}
+        \item \textbf{Role:} Full-Stack \& 3D Development
+        \item 3D portfolio website showcasing modern web development capabilities with Three.js, GSAP animations, and immersive user experience.
+        \item Created immersive 3D portfolio using Three.js for 3D graphics, GSAP for advanced animations, and Framer Motion.
+        \item \textbf{Stack:} Next.js, Three.js, GSAP, Framer Motion, Tailwind CSS
+    \end{highlights}
+\end{onecolentry}
+
+\begin{twocolentry}{\href{https://www.astraterra.ae/}{astraterra.ae}}
+    \textbf{\href{https://www.astraterra.ae/}{Astra Terra Properties}}
+\end{twocolentry}
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{Role:} Full-Stack Development
+        \item A dynamic, one-stop-shop, full-service real estate provider dedicated to delivering exceptional property solutions across Dubai, UAE.
+        \item Built comprehensive real estate platform with interactive maps, property search, filters, and seamless user experience.
+        \item \textbf{Stack:} Next.js, Tailwind CSS, GSAP, Leaflet Maps, Firebase
+    \end{highlights}
+\end{onecolentry}
+
+\begin{twocolentry}{\href{https://royroki.github.io/dubai-luxury-apartments/}{royroki.github.io/dubai-luxury-apartments}}
+    \textbf{\href{https://royroki.github.io/dubai-luxury-apartments/}{Dubai Luxury Apartments}}
+\end{twocolentry}
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{Role:} UI/UX Design \& Frontend Development
+        \item Premium landing page for exceptional properties in Dubai, featuring smooth scroll animations and award-worthy aesthetics.
+        \item Designed and developed award-worthy landing page with smooth scroll animations and premium aesthetic.
+        \item \textbf{Stack:} Next.js, GSAP, Framer Motion, Tailwind CSS, Smooth Scroll
+    \end{highlights}
 \end{onecolentry}
 
 \vspace{-0.2cm}
 % Technologies
 \section{Technologies}
 \begin{onecolentry}
-    \textbf{Primary:} Golang, React, Flutter, PostgreSQL, Docker
+    \textbf{Primary:} Golang, Next.js, React, Flutter, PostgreSQL, Docker
 \end{onecolentry}
 \begin{onecolentry}
-    \textbf{Secondary:} Java (Spring Boot), JavaScript (ES6+), TypeScript, Swift, Firebase, AWS, gRPC
+    \textbf{Secondary:} JavaScript (ES6+), TypeScript, Swift, Firebase, AWS, gRPC
 \end{onecolentry}
 
 
