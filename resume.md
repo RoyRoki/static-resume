@@ -1,85 +1,85 @@
 # Roki Roy
 
-**Location:** Siliguri  
+**Portfolio:** [royroki.github.io/wowfy](https://royroki.github.io/wowfy)  
+**GitHub:** [github.com/royroki](https://github.com/royroki)  
+**LinkedIn:** [linkedin.com/in/rokiroy](https://linkedin.com/in/rokiroy)  
 **Email:** [rokiroydev@gmail.com](mailto:rokiroydev@gmail.com)  
 **Phone:** [+91 9800 881 300](tel:+91-980-088-13-00)  
-**Website:** [royroki.github.io/wowfy](https://royroki.github.io/wowfy)  
-**LinkedIn:** [linkedin.com/in/rokiroy](https://linkedin.com/in/rokiroy)  
-**GitHub:** [github.com/royroki](https://github.com/royroki)
+**Location:** Siliguri
 
 ---
 
 ## Summary
 
-Full-stack developer with hands-on experience shipping production Flutter, React, and Golang systems. Strong in clean architecture, backend performance optimization, and **real-world app delivery** (web, mobile, Apple Watch).
+Full-stack developer with production experience building Flutter, React, and Golang systems used by 5,000+ users. Strong focus on clean architecture, backend performance, and shipping real-world products across web, mobile, and wearables. Proven ability to deliver and maintain production systems end-to-end in fast-paced Agile environments.
 
 ---
 
 ## Experience
 
-### SDE 1, [Fordel Studios](https://Fordelstudios.com/)
-**Feb 2025 – Present** · (Onsite)
+### SDE 1, [Fordel Studios](https://fordelstudios.com/)
+**Feb 2025 – Present** · Onsite
 
-- Led end-to-end Flutter app development using clean architecture, supporting 5,000+ active users with 98% crash-free sessions; currently developing v2 with advanced features.
-- Coordinated cross-functional teams (design, backend, QA) across multiple initiatives to deliver features on schedule using Agile workflows.
+- Led end-to-end Flutter app development using clean architecture, supporting 5,000+ active users with 98% crash-free sessions.
 - Designed and implemented Golang backend services, reducing API response time by 25% and improving system reliability.
-- Optimized a React–Node.js e-commerce platform by integrating complex third-party APIs and reducing page load times by 30%.
-- Developed and shipped an Apple Watch app in Swift, extending the product ecosystem to wearable platforms.
+- Collaborated with design, backend, and QA teams to architect, implement, and ship features within Agile sprints.
+- Optimized a React–Node.js e-commerce platform by integrating third-party APIs and reducing page load times by 30%.
+- Designed and shipped a companion Apple Watch app in Swift, extending core mobile functionality to wearable platforms.
 
-### Full Stack Developer Intern, [Fordel Studios](https://Fordelstudios.com/)
-**Aug 2024 – Jan 2025** · (Onsite)
+### Full Stack Developer Intern, [Fordel Studios](https://fordelstudios.com/)
+**Aug 2024 – Jan 2025** · Onsite
 
-- Optimized backend APIs and database queries, improving data retrieval performance and supporting new frontend features.
-- Participated in Agile sprints, code reviews, and bug triage, contributing production-ready fixes.
+- Optimized backend APIs and database queries, improving response times and enabling new frontend features.
 
 ---
 
 ## Projects
 
-### The Formula Shop
-**Role:** Frontend Development (Team Project at Fordel Studios)
-- Korean beauty product e-commerce website featuring modern design, product catalog, and seamless shopping experience.
-- Built responsive e-commerce website with product catalog, cart functionality, and modern design using Next.js and Tailwind CSS.
-- **Stack:** Next.js, Tailwind CSS, E-commerce, Responsive Design
+### [emSigner Digital Signature](https://play.google.com/store/apps/details?id=com.emudhra.emSigner&hl=en_IN)
 
-### emSigner Digital Signature
-**Role:** Flutter Mobile Development (Developed at Fordel Studios)
-- Cross-platform mobile application for secure digital signatures on Android and iOS.
-- Developed Flutter-based mobile application with robust security features, API integrations, and native performance.
-- **Stack:** Flutter, Dart, API Integration, Android, iOS
+- Developed a production Flutter application with secure API integrations and native performance, achieving 98% crash-free sessions.
+- Implemented clean architecture patterns to support scalable feature development and long-term maintainability.
+- **Stack:** Flutter, Dart, REST API, Android, iOS
 
-### wowfy - 3D Portfolio
-**Role:** Full-Stack & 3D Development
-- 3D portfolio website showcasing modern web development capabilities with Three.js, GSAP animations, and immersive user experience.
-- Created immersive 3D portfolio using Three.js for 3D graphics, GSAP for advanced animations, and Framer Motion.
-- **Live:** [royroki.github.io/wowfy](https://royroki.github.io/wowfy/)
-- **Stack:** Next.js, Three.js, GSAP, Framer Motion, Tailwind CSS
+### [The Formula Shop - Production E-commerce Platform](https://theformulashop.com/)
 
-### Astra Terra Properties
-**Role:** Full-Stack Development
-- A dynamic, one-stop-shop, full-service real estate provider dedicated to delivering exceptional property solutions across Dubai, UAE.
-- Built comprehensive real estate platform with interactive maps, property search, filters, and seamless user experience.
-- **Live:** [astraterra.ae](https://www.astraterra.ae/)
-- **Stack:** Next.js, Tailwind CSS, GSAP, Leaflet Maps, Firebase
+- Built and shipped a production e-commerce platform with live users and real order flows.
+- Implemented product catalog, cart, and checkout flows with optimized client-side rendering.
+- Integrated third-party services for payments and order processing.
+- **Stack:** Next.js, Tailwind CSS, REST APIs
 
-### Dubai Luxury Apartments
-**Role:** UI/UX Design & Frontend Development
-- Premium landing page for exceptional properties in Dubai, featuring smooth scroll animations and award-worthy aesthetics.
-- Designed and developed award-worthy landing page with smooth scroll animations and premium aesthetic.
-- **Live:** [royroki.github.io/dubai-luxury-apartments](https://royroki.github.io/dubai-luxury-apartments/)
-- **Stack:** Next.js, GSAP, Framer Motion, Tailwind CSS, Smooth Scroll
+### [Astra Terra Properties](https://www.astraterra.ae/)
+
+- Built a full-stack real estate platform with map-based search, advanced filtering, and optimized client-side rendering.
+- Integrated Leaflet Maps, GSAP animations, and Firebase backend for real-time data synchronization.
+- **Stack:** Next.js, TypeScript, GSAP, Leaflet Maps, Firebase
+
+### [LetsGo - Tag-Based Chat System](https://github.com/RoyRoki/LetsGo)
+
+- Engineered a tag-based user matching system using Redis Bitmaps and Lua scripting for low-latency user discovery.
+- Built a real-time WebSocket chat server with gRPC-based microservice communication.
+- Containerized multi-service system using Docker for scalable deployment.
+- **Stack:** Go 1.22, gRPC, Redis + Lua, WebSockets, Docker, TypeScript
 
 ---
 
 ## Technologies
 
-**Primary:** Golang, Next.js, React, Flutter, PostgreSQL, Docker
+**Backend & Systems:** Golang, PostgreSQL, Docker, gRPC
 
-**Secondary:** JavaScript (ES6+), TypeScript, Swift, Firebase, AWS, gRPC
+**Frontend:** Next.js, React, TypeScript, JavaScript (ES6+)
+
+**Mobile:** Flutter (Dart), Swift
+
+**Cloud & Tools:** Firebase, AWS
+
+**Agentic & Automation:** Agentic workflows, LLM tool-calling, task automation, AI-assisted development
 
 ---
 
 ## Education
 
 ### University of North Bengal
-**BCA (pursuing)** · Sept 2024 – May 2027
+**Bachelor of Computer Applications (BCA)** · Expected May 2027
+
+*Relevant Coursework: Data Structures, Database Management Systems, Operating Systems, Computer Networks*

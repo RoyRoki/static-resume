@@ -2,26 +2,26 @@
     "name": "Roki Roy",
     "contact": {
         "location": "Siliguri",
-        "email": "rokiroydev@gmail.com",
-        "phone": "+91 9800 881 300",
         "website": "https://royroki.github.io/wowfy",
+        "github": "https://github.com/royroki",
         "linkedin": "https://linkedin.com/in/rokiroy",
-        "github": "https://github.com/royroki"
+        "email": "rokiroydev@gmail.com",
+        "phone": "+91 9800 881 300"
     },
-    "summary": "Full-stack developer with hands-on experience shipping production Flutter, React, and Golang systems. Strong in clean architecture, backend performance optimization, and real-world app delivery (web, mobile, Apple Watch).",
+    "summary": "Full-stack developer with production experience building Flutter, React, and Golang systems used by 5,000+ users. Strong focus on clean architecture, backend performance, and shipping real-world products across web, mobile, and wearables. Proven ability to deliver and maintain production systems end-to-end in fast-paced Agile environments.",
     "experience": [
         {
             "title": "SDE 1",
             "company": "Fordel Studios",
             "location": "Onsite",
             "period": "Feb 2025 – Present",
-            "url": "https://Fordelstudios.com/",
+            "url": "https://fordelstudios.com/",
             "highlights": [
                 "Led end-to-end Flutter app development using clean architecture, supporting 5,000+ active users with 98% crash-free sessions",
-                "Coordinated cross-functional teams (design, backend, QA) across multiple initiatives to deliver features on schedule using Agile workflows",
                 "Designed and implemented Golang backend services, reducing API response time by 25% and improving system reliability",
-                "Optimized a React–Node.js e-commerce platform by integrating complex third-party APIs and reducing page load times by 30%",
-                "Developed and shipped an Apple Watch app in Swift, extending the product ecosystem to wearable platforms"
+                "Collaborated with design, backend, and QA teams to architect, implement, and ship features within Agile sprints",
+                "Optimized a React–Node.js e-commerce platform by integrating third-party APIs and reducing page load times by 30%",
+                "Designed and shipped a companion Apple Watch app in Swift, extending core mobile functionality to wearable platforms"
             ]
         },
         {
@@ -29,112 +29,113 @@
             "company": "Fordel Studios",
             "location": "Onsite",
             "period": "Aug 2024 – Jan 2025",
-            "url": "https://Fordelstudios.com/",
+            "url": "https://fordelstudios.com/",
             "highlights": [
-                "Optimized backend APIs and database queries, improving data retrieval performance and supporting new frontend features",
-                "Participated in Agile sprints, code reviews, and bug triage, contributing production-ready fixes"
+                "Optimized backend APIs and database queries, improving response times and enabling new frontend features"
             ]
         }
     ],
     "projects": [
         {
-            "name": "The Formula Shop",
-            "description": "Korean beauty product e-commerce website featuring modern design, product catalog, and seamless shopping experience. Team Project at Fordel Studios.",
-            "url": "https://theformulashop.com/",
-            "highlights": [
-                "Built responsive e-commerce website with product catalog, cart functionality, and modern design using Next.js and Tailwind CSS"
-            ],
-            "stack": [
-                "Next.js",
-                "Tailwind CSS",
-                "E-commerce",
-                "Responsive Design"
-            ]
-        },
-        {
             "name": "emSigner Digital Signature",
-            "description": "Cross-platform mobile application for secure digital signatures on Android and iOS. Developed at Fordel Studios.",
+            "description": "Production Flutter application for secure digital signatures on Android and iOS, serving 5,000+ active users.",
             "url": "https://play.google.com/store/apps/details?id=com.emudhra.emSigner&hl=en_IN",
             "highlights": [
-                "Developed Flutter-based mobile application with robust security features, API integrations, and native performance"
+                "Developed a production Flutter application with secure API integrations and native performance, achieving 98% crash-free sessions",
+                "Implemented clean architecture patterns to support scalable feature development and long-term maintainability"
             ],
             "stack": [
                 "Flutter",
                 "Dart",
-                "API Integration",
+                "REST API",
                 "Android",
                 "iOS"
             ]
         },
         {
-            "name": "wowfy - 3D Portfolio",
-            "description": "3D portfolio website showcasing modern web development capabilities with Three.js, GSAP animations, and immersive user experience.",
-            "url": "https://royroki.github.io/wowfy/",
+            "name": "The Formula Shop - Production E-commerce Platform",
+            "description": "Production e-commerce platform with live users and real order flows.",
+            "url": "https://theformulashop.com/",
             "highlights": [
-                "Created immersive 3D portfolio using Three.js for 3D graphics, GSAP for advanced animations, and Framer Motion"
-            ],
-            "stack": [
-                "Next.js",
-                "Three.js",
-                "GSAP",
-                "Framer Motion",
-                "Tailwind CSS"
-            ]
-        },
-        {
-            "name": "Astra Terra Properties",
-            "description": "A dynamic, one-stop-shop, full-service real estate provider dedicated to delivering exceptional property solutions across Dubai, UAE.",
-            "url": "https://www.astraterra.ae/",
-            "highlights": [
-                "Built comprehensive real estate platform with interactive maps, property search, filters, and seamless user experience"
+                "Built and shipped a production e-commerce platform with live users and real order flows",
+                "Implemented product catalog, cart, and checkout flows with optimized client-side rendering",
+                "Integrated third-party services for payments and order processing"
             ],
             "stack": [
                 "Next.js",
                 "Tailwind CSS",
+                "REST APIs"
+            ]
+        },
+        {
+            "name": "Astra Terra Properties",
+            "description": "Full-stack real estate platform with map-based search and advanced filtering.",
+            "url": "https://www.astraterra.ae/",
+            "highlights": [
+                "Built a full-stack real estate platform with map-based search, advanced filtering, and optimized client-side rendering",
+                "Integrated Leaflet Maps, GSAP animations, and Firebase backend for real-time data synchronization"
+            ],
+            "stack": [
+                "Next.js",
+                "TypeScript",
                 "GSAP",
                 "Leaflet Maps",
                 "Firebase"
             ]
         },
         {
-            "name": "Dubai Luxury Apartments",
-            "description": "Premium landing page for exceptional properties in Dubai, featuring smooth scroll animations and award-worthy aesthetics.",
-            "url": "https://royroki.github.io/dubai-luxury-apartments/",
+            "name": "LetsGo - Tag-Based Chat System",
+            "description": "Real-time microservices chat application with tag-based user matching.",
+            "url": "https://github.com/RoyRoki/LetsGo",
             "highlights": [
-                "Designed and developed award-worthy landing page with smooth scroll animations and premium aesthetic"
+                "Engineered a tag-based user matching system using Redis Bitmaps and Lua scripting for low-latency user discovery",
+                "Built a real-time WebSocket chat server with gRPC-based microservice communication",
+                "Containerized multi-service system using Docker for scalable deployment"
             ],
             "stack": [
-                "Next.js",
-                "GSAP",
-                "Framer Motion",
-                "Tailwind CSS",
-                "Smooth Scroll"
+                "Go 1.22",
+                "gRPC",
+                "Redis + Lua",
+                "WebSockets",
+                "Docker",
+                "TypeScript"
             ]
         }
     ],
     "technologies": {
-        "primary": [
+        "backend": [
             "Golang",
+            "PostgreSQL",
+            "Docker",
+            "gRPC"
+        ],
+        "frontend": [
             "Next.js",
             "React",
-            "Flutter",
-            "PostgreSQL",
-            "Docker"
-        ],
-        "secondary": [
-            "JavaScript (ES6+)",
             "TypeScript",
-            "Swift",
+            "JavaScript (ES6+)"
+        ],
+        "mobile": [
+            "Flutter (Dart)",
+            "Swift"
+        ],
+        "cloud": [
             "Firebase",
-            "AWS",
-            "gRPC"
+            "AWS"
+        ],
+        "agentic": [
+            "Agentic workflows",
+            "LLM tool-calling",
+            "task automation",
+            "AI-assisted development"
         ]
     },
     "education": [
         {
-            "institution": "Siliguri College",
-            "degree": "BCA (pursuing)",
-            "period": "Sept 2024 – May 2027"
+            "institution": "University of North Bengal",
+            "degree": "Bachelor of Computer Applications (BCA)",
+            "period": "Expected May 2027",
+            "coursework": "Data Structures, Database Management Systems, Operating Systems, Computer Networks"
         }
     ]
 }
