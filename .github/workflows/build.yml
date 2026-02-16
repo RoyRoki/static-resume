@@ -22,33 +22,29 @@ jobs:
             texlive-latex-extra \
             texlive-fonts-recommended \
             texlive-fonts-extra \
-            texlive-lang-english
+            texlive-lang-english \
+            latexmk
 
       - name: Compile all resume.tex files to PDF
         run: |
           # Compile base resume (Full-Stack)
-          pdflatex -interaction=nonstopmode resume.tex
-          pdflatex -interaction=nonstopmode resume.tex
+          latexmk -pdf -interaction=nonstopmode resume.tex
           mv resume.pdf roki_roy_resume.pdf
           
           # Compile web resume (Frontend)
-          pdflatex -interaction=nonstopmode resume-web.tex
-          pdflatex -interaction=nonstopmode resume-web.tex
+          latexmk -pdf -interaction=nonstopmode resume-web.tex
           mv resume-web.pdf roki_roy_resume_web.pdf
           
           # Compile backend resume
-          pdflatex -interaction=nonstopmode resume-backend.tex
-          pdflatex -interaction=nonstopmode resume-backend.tex
+          latexmk -pdf -interaction=nonstopmode resume-backend.tex
           mv resume-backend.pdf roki_roy_resume_backend.pdf
           
           # Compile app resume (Flutter + Swift)
-          pdflatex -interaction=nonstopmode resume-app.tex
-          pdflatex -interaction=nonstopmode resume-app.tex
+          latexmk -pdf -interaction=nonstopmode resume-app.tex
           mv resume-app.pdf roki_roy_resume_app.pdf
           
           # Compile devops resume
-          pdflatex -interaction=nonstopmode resume-devops.tex
-          pdflatex -interaction=nonstopmode resume-devops.tex
+          latexmk -pdf -interaction=nonstopmode resume-devops.tex
           mv resume-devops.pdf roki_roy_resume_devops.pdf
 
       - name: Update sitemap.xml lastmod date
