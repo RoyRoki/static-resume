@@ -1,26 +1,31 @@
 {
     "name": "Roki Roy",
+    "title": "Backend Engineer (Go, Distributed Systems, Real-Time Systems)",
     "contact": {
         "location": "Siliguri",
-        "website": "https://royroki.github.io/wowfy",
-        "github": "https://github.com/royroki",
-        "linkedin": "https://linkedin.com/in/rokiroy",
         "email": "rokiroydev@gmail.com",
-        "phone": "+91 9800 881 300"
+        "phone": "+91 9800 881 300",
+        "website": "https://royroki.github.io/wowfy",
+        "linkedin": "https://linkedin.com/in/rokiroy",
+        "github": "https://github.com/royroki"
     },
-    "summary": "Full-stack developer with production experience building Flutter, React, and Golang systems used by 5,000+ users. Strong focus on clean architecture, backend performance, and shipping real-world products across web, mobile, and wearables. Proven ability to deliver and maintain production systems end-to-end in fast-paced Agile environments.",
+    "summary": "Backend engineer with production experience designing scalable Go services, real-time systems, and performance-optimized APIs serving 5,000+ users. Strong focus on system reliability, concurrency, caching strategies, and clean architecture. Delivered measurable improvements including 25–40% latency reduction across production systems.",
+    "technical_highlights": [
+        "Reduced API latency by 25–40% via query optimization and caching",
+        "Designed real-time infrastructure with WebSockets + Redis",
+        "Built containerized microservices using Docker Compose"
+    ],
     "experience": [
         {
             "title": "SDE 1",
             "company": "Fordel Studios",
             "location": "Onsite",
             "period": "Feb 2025 – Present",
-            "url": "https://fordelstudios.com/",
+            "url": "https://Fordelstudios.com/",
             "highlights": [
-                "Led end-to-end Flutter app development using clean architecture, supporting 5,000+ active users with 98% crash-free sessions",
                 "Designed and implemented Golang backend services, reducing API response time by 25% and improving system reliability",
-                "Collaborated with design, backend, and QA teams to architect, implement, and ship features within Agile sprints",
-                "Accelerated a React–Node.js e-commerce platform by integrating 5+ third-party APIs, reducing page load times by 30% and improving conversion rate by 12%",
+                "Architected a React–Node.js e-commerce platform by integrating 5+ third-party APIs, reducing page load times by 30% and improving conversion rate by 12%",
+                "Led end-to-end Flutter app development using clean architecture, supporting 5,000+ active users with 98% crash-free sessions",
                 "Designed and shipped a companion Apple Watch app in Swift, extending core mobile functionality to wearable platforms"
             ]
         },
@@ -29,48 +34,69 @@
             "company": "Fordel Studios",
             "location": "Onsite",
             "period": "Aug 2024 – Jan 2025",
-            "url": "https://fordelstudios.com/",
+            "url": "https://Fordelstudios.com/",
             "highlights": [
-                "Refactored 15+ backend APIs and database queries, cutting average response times by 40% and enabling 8 new frontend features"
+                "Optimized 15+ backend APIs and database queries, cutting average response times by 40% and enabling 8 new frontend features"
             ]
         }
     ],
     "projects": [
         {
-            "name": "emSigner Digital Signature",
-            "description": "Production Flutter application for secure digital signatures on Android and iOS, serving 5,000+ active users.",
-            "url": "https://play.google.com/store/apps/details?id=com.emudhra.emSigner&hl=en_IN",
+            "name": "ZenliAI – AI Content Generator (Go Backend)",
+            "url": "https://github.com/RoyRoki/AI-CREATIVE-CONTENT-GENERATOR",
+            "description": "Scalable AI content generation platform with clean architecture.",
             "highlights": [
-                "Developed a production Flutter application integrating PayU, Stripe payment gateways and Aadhaar verification services, achieving 98% crash-free sessions across 5,000+ active users",
-                "Architected clean architecture patterns across 20+ feature modules to support scalable development and reduce technical debt by 35%"
+                "Architected a scalable microservices-ready Go backend using Clean Architecture and Domain-Driven Design principles",
+                "Implemented asynchronous task processing using Redis and Asynq for non-blocking content generation (PDF/Image/SVG)",
+                "Secured API with JWT authentication and RBAC, handling concurrent requests with goroutines and channels",
+                "Optimized database performance with PostgreSQL indexing and concurrent writes for high-throughput data ingestion"
             ],
             "stack": [
-                "Flutter",
-                "Dart",
-                "REST API",
-                "Android",
-                "iOS"
+                "Go 1.22",
+                "Gin",
+                "PostgreSQL",
+                "Redis",
+                "Docker",
+                "GORM"
             ]
         },
         {
-            "name": "The Formula Shop - Production E-commerce Platform",
-            "description": "Production e-commerce platform with live users and real order flows.",
-            "url": "https://theformulashop.com/",
+            "name": "Dooars Dil – Hyper-local Dating Platform",
+            "url": "https://github.com/RoyRoki/Dooars_Dil",
+            "description": "Hyper-local dating platform with voice verification.",
             "highlights": [
-                "Launched and shipped a production e-commerce platform serving 1,200+ monthly active users and processing 500+ orders",
-                "Delivered product catalog (300+ SKUs), cart, and checkout flows with client-side rendering, achieving sub-2s page loads",
-                "Integrated third-party services for payments and order processing"
+                "Engineered a hyper-local matchmaking system using PostGIS to connect users based on specific town clusters (\"Adda Zones\") rather than generic radius",
+                "Built a voice-first messaging architecture processing 7-second audio verifications and real-time voice notes for authentic user interaction",
+                "Designed a bilingual (Bengali/English) backend system serving localized content with high concurrency support"
             ],
             "stack": [
-                "Next.js",
-                "Tailwind CSS",
-                "REST APIs"
+                "Go 1.22",
+                "Gin",
+                "PostgreSQL (PostGIS)",
+                "Redis",
+                "Docker"
+            ]
+        },
+        {
+            "name": "Vayuroom – Privacy-First WebRTC Platform",
+            "url": "https://github.com/RoyRoki/vayuroom",
+            "description": "Zero-knowledge video conferencing platform.",
+            "highlights": [
+                "Developed a zero-knowledge, end-to-end encrypted video conferencing platform using WebRTC and DTLS-SRTP",
+                "Implemented ephemeral signaling using Firebase Realtime Database with no persistent storage of user data",
+                "Created a custom signaling protocol for mesh networking to support small-group P2P calls without a central media server"
+            ],
+            "stack": [
+                "React",
+                "WebRTC",
+                "Firebase",
+                "Cryptography (E2EE)"
             ]
         },
         {
             "name": "Astra Terra Properties",
-            "description": "Full-stack real estate platform with map-based search and advanced filtering.",
             "url": "https://www.astraterra.ae/",
+            "description": "Full-stack real estate platform with map-based search and advanced filtering.",
             "highlights": [
                 "Developed a full-stack real estate platform with map-based search across 200+ properties, advanced filtering (8 parameters), and optimized rendering",
                 "Integrated Leaflet Maps, GSAP animations, and Firebase backend for real-time data synchronization with sub-500ms latency"
@@ -82,32 +108,15 @@
                 "Leaflet Maps",
                 "Firebase"
             ]
-        },
-        {
-            "name": "LetsGo - Tag-Based Chat System",
-            "description": "Real-time microservices chat application with tag-based user matching.",
-            "url": "https://github.com/RoyRoki/LetsGo",
-            "highlights": [
-                "Engineered a tag-based user matching system using Redis Bitmaps and Lua scripting for low-latency user discovery",
-                "Engineered a real-time WebSocket chat server handling 100+ concurrent connections with gRPC-based microservice communication",
-                "Containerized 3-service system using Docker Compose with automated deployment workflows, reducing setup time by 70%"
-            ],
-            "stack": [
-                "Go 1.22",
-                "gRPC",
-                "Redis + Lua",
-                "WebSockets",
-                "Docker",
-                "TypeScript"
-            ]
         }
     ],
     "technologies": {
         "backend": [
-            "Golang",
+            "Golang (concurrency)",
+            "Redis",
+            "gRPC",
             "PostgreSQL",
-            "Docker",
-            "gRPC"
+            "Docker"
         ],
         "frontend": [
             "Next.js",
@@ -120,6 +129,7 @@
             "Swift"
         ],
         "cloud": [
+            "Docker",
             "Firebase",
             "AWS"
         ],

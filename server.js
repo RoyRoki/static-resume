@@ -47,6 +47,7 @@ app.get('/md', (req, res) => {
 app.get('/json', (req, res) => {
     const resumeData = {
         name: "Roki Roy",
+        title: "Backend Engineer (Go, Distributed Systems, Real-Time Systems)",
         contact: {
             location: "Siliguri",
             email: "rokiroydev@gmail.com",
@@ -55,7 +56,12 @@ app.get('/json', (req, res) => {
             linkedin: "https://linkedin.com/in/rokiroy",
             github: "https://github.com/royroki"
         },
-        summary: "Full-stack developer with hands-on experience shipping production Flutter, React, and Golang systems. Strong in clean architecture, backend performance optimization, and real-world app delivery (web, mobile, Apple Watch).",
+        summary: "Backend engineer with production experience designing scalable Go services, real-time systems, and performance-optimized APIs serving 5,000+ users. Strong focus on system reliability, concurrency, caching strategies, and clean architecture. Delivered measurable improvements including 25–40% latency reduction across production systems.",
+        technical_highlights: [
+            "Reduced API latency by 25–40% via query optimization and caching",
+            "Designed real-time infrastructure with WebSockets + Redis",
+            "Built containerized microservices using Docker Compose"
+        ],
         experience: [
             {
                 title: "SDE 1",
@@ -64,11 +70,10 @@ app.get('/json', (req, res) => {
                 period: "Feb 2025 – Present",
                 url: "https://Fordelstudios.com/",
                 highlights: [
-                    "Led end-to-end Flutter app development using clean architecture, supporting 5,000+ active users with 98% crash-free sessions",
-                    "Coordinated cross-functional teams (design, backend, QA) across multiple initiatives to deliver features on schedule using Agile workflows",
                     "Designed and implemented Golang backend services, reducing API response time by 25% and improving system reliability",
-                    "Optimized a React–Node.js e-commerce platform by integrating complex third-party APIs and reducing page load times by 30%",
-                    "Developed and shipped an Apple Watch app in Swift, extending the product ecosystem to wearable platforms"
+                    "Architected a React–Node.js e-commerce platform by integrating 5+ third-party APIs, reducing page load times by 30% and improving conversion rate by 12%",
+                    "Led end-to-end Flutter app development using clean architecture, supporting 5,000+ active users with 98% crash-free sessions",
+                    "Designed and shipped a companion Apple Watch app in Swift, extending core mobile functionality to wearable platforms"
                 ]
             },
             {
@@ -78,46 +83,69 @@ app.get('/json', (req, res) => {
                 period: "Aug 2024 – Jan 2025",
                 url: "https://Fordelstudios.com/",
                 highlights: [
-                    "Optimized backend APIs and database queries, improving data retrieval performance and supporting new frontend features",
-                    "Participated in Agile sprints, code reviews, and bug triage, contributing production-ready fixes"
+                    "Optimized 15+ backend APIs and database queries, cutting average response times by 40% and enabling 8 new frontend features"
                 ]
             }
         ],
         projects: [
             {
-                name: "ZenliAI – AI-Powered Content Generation Platform",
-                description: "Built full-stack platform enabling users to generate eBooks, SVG, clipart, and SEO content with integrated Pinterest automation for pin upload",
+                name: "ZenliAI – AI Content Generator (Go Backend)",
+                url: "https://github.com/RoyRoki/AI-CREATIVE-CONTENT-GENERATOR",
+                description: "Scalable AI content generation platform with clean architecture.",
                 highlights: [
-                    "Architected complex backend in Golang with GenAI API integration and S3 for asset storage"
+                    "Architected a scalable microservices-ready Go backend using Clean Architecture and Domain-Driven Design principles",
+                    "Implemented asynchronous task processing using Redis and Asynq for non-blocking content generation (PDF/Image/SVG)",
+                    "Secured API with JWT authentication and RBAC, handling concurrent requests with goroutines and channels",
+                    "Optimized database performance with PostgreSQL indexing and concurrent writes for high-throughput data ingestion"
                 ],
-                stack: ["Golang", "React", "GenAI APIs", "AWS S3", "Pinterest API"]
+                stack: ["Go 1.22", "Gin", "PostgreSQL", "Redis", "Docker", "GORM"]
             },
             {
-                name: "BattleManager – Tournament Management PWA",
-                description: "Built a tournament management PWA with real-time updates and messaging using React, Firebase, and Capacitor",
+                name: "Dooars Dil – Hyper-local Dating Platform",
+                url: "https://github.com/RoyRoki/Dooars_Dil",
+                description: "Hyper-local dating platform with voice verification.",
                 highlights: [
-                    "Implemented real-time messaging system with Firebase for instant tournament updates and player communication"
-                ]
+                    "Engineered a hyper-local matchmaking system using PostGIS to connect users based on specific town clusters (\"Adda Zones\") rather than generic radius",
+                    "Built a voice-first messaging architecture processing 7-second audio verifications and real-time voice notes for authentic user interaction",
+                    "Designed a bilingual (Bengali/English) backend system serving localized content with high concurrency support"
+                ],
+                stack: ["Go 1.22", "Gin", "PostgreSQL (PostGIS)", "Redis", "Docker"]
             },
             {
-                name: "LetsGo – Tag-Based Chatting App",
-                url: "https://github.com/RoyRoki/LetsGo",
-                description: "Built real-time chat app using Golang microservices",
+                name: "Vayuroom – Privacy-First WebRTC Platform",
+                url: "https://github.com/RoyRoki/vayuroom",
+                description: "Zero-knowledge video conferencing platform.",
                 highlights: [
-                    "Used gRPC + Protocol buffers for sub-200ms message latency"
+                    "Developed a zero-knowledge, end-to-end encrypted video conferencing platform using WebRTC and DTLS-SRTP",
+                    "Implemented ephemeral signaling using Firebase Realtime Database with no persistent storage of user data",
+                    "Created a custom signaling protocol for mesh networking to support small-group P2P calls without a central media server"
                 ],
-                stack: ["Golang", "Microservices", "gRPC", "Protobuf", "Docker"]
+                stack: ["React", "WebRTC", "Firebase", "Cryptography (E2EE)"]
+            },
+            {
+                name: "Astra Terra Properties",
+                url: "https://www.astraterra.ae/",
+                description: "Full-stack real estate platform with map-based search and advanced filtering.",
+                highlights: [
+                    "Developed a full-stack real estate platform with map-based search across 200+ properties, advanced filtering (8 parameters), and optimized rendering",
+                    "Integrated Leaflet Maps, GSAP animations, and Firebase backend for real-time data synchronization with sub-500ms latency"
+                ],
+                stack: ["Next.js", "TypeScript", "GSAP", "Leaflet Maps", "Firebase"]
             }
         ],
         technologies: {
-            primary: ["Golang", "React", "Flutter", "PostgreSQL", "Docker"],
-            secondary: ["Java (Spring Boot)", "JavaScript (ES6+)", "TypeScript", "Swift", "Firebase", "AWS", "gRPC"]
+            backend: ["Golang (concurrency)", "Redis", "gRPC", "PostgreSQL", "Docker"],
+            frontend: ["Next.js", "React", "TypeScript", "JavaScript (ES6+)"],
+            mobile: ["Flutter (Dart)", "Swift"],
+            cloud: ["Docker", "Firebase", "AWS"],
+            agentic: ["Agentic workflows", "LLM tool-calling", "task automation", "AI-assisted development"]
         },
         education: [
             {
                 institution: "University of North Bengal",
-                degree: "BCA (pursuing)",
-                period: "Sept 2024 – May 2027"
+                degree: "Bachelor of Computer Applications (BCA)",
+                period: "Expected May 2027",
+                coursework: "Data Structures, Database Management Systems, Operating Systems, Computer Networks"
             }
         ]
     };

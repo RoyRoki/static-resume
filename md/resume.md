@@ -1,5 +1,7 @@
 # Roki Roy
 
+**Backend Engineer (Go, Distributed Systems, Real-Time Systems)**
+
 **Portfolio:** [royroki.github.io/wowfy](https://royroki.github.io/wowfy)  
 **GitHub:** [github.com/royroki](https://github.com/royroki)  
 **LinkedIn:** [linkedin.com/in/rokiroy](https://linkedin.com/in/rokiroy)  
@@ -11,7 +13,7 @@
 
 ## Summary
 
-Full-stack developer with production experience building Flutter, React, and Golang systems used by 5,000+ users. Strong focus on clean architecture, backend performance, and shipping real-world products across web, mobile, and wearables. Proven ability to deliver and maintain production systems end-to-end in fast-paced Agile environments.
+Backend engineer with production experience designing scalable Go services, real-time systems, and performance-optimized APIs serving 5,000+ users. Strong focus on system reliability, concurrency, caching strategies, and clean architecture. Delivered measurable improvements including 25–40% latency reduction across production systems.
 
 ---
 
@@ -20,33 +22,49 @@ Full-stack developer with production experience building Flutter, React, and Gol
 ### SDE 1, [Fordel Studios](https://fordelstudios.com/)
 **Feb 2025 – Present** · Onsite
 
-- Led end-to-end Flutter app development using clean architecture, supporting 5,000+ active users with 98% crash-free sessions.
 - Designed and implemented Golang backend services, reducing API response time by 25% and improving system reliability.
-- Collaborated with design, backend, and QA teams to architect, implement, and ship features within Agile sprints.
-- Accelerated a React–Node.js e-commerce platform by integrating 5+ third-party APIs, reducing page load times by 30% and improving conversion rate by 12%.
+- Architected a React–Node.js e-commerce platform by integrating 5+ third-party APIs, reducing page load times by 30% and improving conversion rate by 12%.
+- Led end-to-end Flutter app development using clean architecture, supporting 5,000+ active users with 98% crash-free sessions.
 - Designed and shipped a companion Apple Watch app in Swift, extending core mobile functionality to wearable platforms.
 
 ### Full Stack Developer Intern, [Fordel Studios](https://fordelstudios.com/)
 **Aug 2024 – Jan 2025** · Onsite
 
-- Refactored 15+ backend APIs and database queries, cutting average response times by 40% and enabling 8 new frontend features.
+- Optimized 15+ backend APIs and database queries, cutting average response times by 40% and enabling 8 new frontend features.
+
+---
+
+## Technical Highlights
+
+- Reduced API latency by 25–40% via query optimization and caching
+- Designed real-time infrastructure with WebSockets + Redis
+- Built containerized microservices using Docker Compose
 
 ---
 
 ## Projects
 
-### [emSigner Digital Signature](https://play.google.com/store/apps/details?id=com.emudhra.emSigner&hl=en_IN)
+### [ZenliAI - AI Content Generator (Go Backend)](https://github.com/RoyRoki/AI-CREATIVE-CONTENT-GENERATOR)
 
-- Developed a production Flutter application integrating PayU, Stripe payment gateways and Aadhaar verification services, achieving 98% crash-free sessions across 5,000+ active users.
-- Architected clean architecture patterns across 20+ feature modules to support scalable development and reduce technical debt by 35%.
-- **Stack:** Flutter, Dart, REST API, Android, iOS
+- Architected a scalable microservices-ready Go backend using Clean Architecture and Domain-Driven Design principles.
+- Implemented asynchronous task processing using Redis and Asynq for non-blocking content generation (PDF/Image/SVG).
+- Secured API with JWT authentication and RBAC, handling concurrent requests with goroutines and channels.
+- Optimized database performance with PostgreSQL indexing and concurrent writes for high-throughput data ingestion.
+- **Stack:** Go 1.22, Gin, PostgreSQL, Redis, Docker, GORM
 
-### [The Formula Shop - Production E-commerce Platform](https://theformulashop.com/)
+### [Dooars Dil - Hyper-local Dating Platform](https://github.com/RoyRoki/Dooars_Dil)
 
-- Launched and shipped a production e-commerce platform serving 1,200+ monthly active users and processing 500+ orders.
-- Delivered product catalog (300+ SKUs), cart, and checkout flows with client-side rendering, achieving sub-2s page loads.
-- Integrated third-party services for payments and order processing.
-- **Stack:** Next.js, Tailwind CSS, REST APIs
+- Engineered a hyper-local matchmaking system using PostGIS to connect users based on specific town clusters ("Adda Zones") rather than generic radius.
+- Built a voice-first messaging architecture processing 7-second audio verifications and real-time voice notes for authentic user interaction.
+- Designed a bilingual (Bengali/English) backend system serving localized content with high concurrency support.
+- **Stack:** Go 1.22, Gin, PostgreSQL (PostGIS), Redis, Docker
+
+### [Vayuroom - Privacy-First WebRTC Platform](https://github.com/RoyRoki/vayuroom)
+
+- Developed a zero-knowledge, end-to-end encrypted video conferencing platform using WebRTC and DTLS-SRTP.
+- Implemented ephemeral signaling using Firebase Realtime Database with no persistent storage of user data.
+- Created a custom signaling protocol for mesh networking to support small-group P2P calls without a central media server.
+- **Stack:** React, WebRTC, Firebase, Cryptography (E2EE)
 
 ### [Astra Terra Properties](https://www.astraterra.ae/)
 
@@ -54,26 +72,19 @@ Full-stack developer with production experience building Flutter, React, and Gol
 - Integrated Leaflet Maps, GSAP animations, and Firebase backend for real-time data synchronization with sub-500ms latency.
 - **Stack:** Next.js, TypeScript, GSAP, Leaflet Maps, Firebase
 
-### [LetsGo - Tag-Based Chat System](https://github.com/RoyRoki/LetsGo)
-
-- Engineered a tag-based user matching system using Redis Bitmaps and Lua scripting for low-latency user discovery.
-- Engineered a real-time WebSocket chat server handling 100+ concurrent connections with gRPC-based microservice communication.
-- Containerized 3-service system using Docker Compose with automated deployment workflows, reducing setup time by 70%.
-- **Stack:** Go 1.22, gRPC, Redis + Lua, WebSockets, Docker, TypeScript
-
 ---
 
 ## Technologies
 
-**Backend & Systems:** Golang, PostgreSQL, Docker, gRPC
+**Backend:** Golang (concurrency, goroutines, channels), Caching (Redis, bitmap indexing), API design (REST, gRPC), Database optimization (PostgreSQL indexing, query tuning)
 
 **Frontend:** Next.js, React, TypeScript, JavaScript (ES6+)
 
 **Mobile:** Flutter (Dart), Swift
 
-**Cloud & Tools:** Firebase, AWS
+**Cloud & Tools:** Docker, Firebase, AWS
 
-**Agentic & Automation:** Agentic workflows, LLM tool-calling, task automation, AI-assisted development
+**Agentic & Automation:** Agentic workflows, LLM tool-calling, task automation
 
 ---
 
