@@ -1,30 +1,16 @@
 \documentclass[10pt, letterpaper]{article}
 
-% --- Preamble ---
 \usepackage[
     ignoreheadfoot,
-    top=2cm,
-    bottom=2cm,
-    left=2cm,
-    right=2cm,
-    footskip=1.0cm
+    top=0.6cm,
+    bottom=0.6cm,
+    left=1.0cm,
+    right=1.0cm
 ]{geometry}
+
 \usepackage{titlesec}
-\usepackage{tabularx}
-\usepackage{array}
-\usepackage[dvipsnames]{xcolor}
-\definecolor{primaryColor}{RGB}{0, 0, 0}
 \usepackage{enumitem}
-\usepackage{fontawesome5}
-\usepackage{amsmath}
-\usepackage[
-    colorlinks=true,
-    urlcolor=primaryColor
-]{hyperref}
-\usepackage{paracol}
-\usepackage{changepage}
-\usepackage{ifthen}
-\usepackage{needspace}
+\usepackage{hyperref}
 \usepackage{iftex}
 
 \ifPDFTeX
@@ -35,153 +21,117 @@
     \usepackage{lmodern}
 \fi
 
-\usepackage{charter} % professional font
+\usepackage{charter}
 
 \raggedright
 \pagestyle{empty}
 \setcounter{secnumdepth}{0}
 \setlength{\parindent}{0pt}
-\pagenumbering{gobble}
 
-\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{2pt}\titlerule]
-\titlespacing{\section}{-1pt}{0.35cm}{0.25cm}
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{0.08cm}{0.04cm}
+
 \renewcommand\labelitemi{\small$\bullet$}
 
-% Custom environments
-\newenvironment{highlights}{
-    \begin{itemize}[topsep=0.15cm, parsep=0.10cm, itemsep=0pt, leftmargin=10pt]
+\newenvironment{tightitem}{
+    \begin{itemize}[topsep=1pt, itemsep=1pt, leftmargin=10pt]
 }{
     \end{itemize}
 }
-\newenvironment{onecolentry}{\begin{adjustwidth}{0cm}{0cm}}{\end{adjustwidth}}
-\newenvironment{twocolentry}[2][]{
-    \onecolentry
-    \def\secondColumn{#2}
-    \setcolumnwidth{\fill, 4.2cm}
-    \begin{paracol}{2}
-}{
-    \switchcolumn \raggedleft \secondColumn
-    \end{paracol}
-    \endonecolentry
-}
-\newenvironment{header}{
-    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.3}
-}{\par\kern\topsep}
 
-% --- Document ---
 \begin{document}
 
-% Header
-\begin{header}
-    \fontsize{24pt}{24pt}\selectfont \textbf{Roki Roy}
+% ---------------- Header ----------------
+\begin{center}
+{\fontsize{22pt}{22pt}\selectfont \textbf{Roki Roy}} \\[3pt]
+Backend Engineer (Go, API Systems) \\[3pt]
+\href{https://royroki.github.io/wowfy}{Portfolio} \textbullet\
+\href{https://github.com/royroki}{GitHub} \textbullet\
+\href{https://linkedin.com/in/rokiroy}{LinkedIn} \\
+rokiroydev@gmail.com \textbullet\ +91 9800 881 300 \textbullet\ Siliguri, India
+\end{center}
 
-    \vspace{4pt}
-
-    \normalsize
-    Siliguri \textbar\ 
-    \href{mailto:rokiroydev@gmail.com}{rokiroydev@gmail.com} \textbar\ 
-    \href{tel:+91-980-088-13-00}{+91 9800 881 300} \textbar\ 
-    \href{https://royroki.github.io/wowfy}{royroki.github.io/wowfy} \textbar\ 
-    \href{https://linkedin.com/in/rokiroy}{linkedin.com/in/rokiroy} \textbar\ 
-    \href{https://github.com/royroki}{github.com/royroki}
-\end{header}
-
-\vspace{-0.3cm}
-% Summary
+% ---------------- Summary ----------------
 \section{Summary}
-\begin{onecolentry}
-    \begin{highlights}
-        \item Full-Stack Developer specializing in \textbf{clean architecture and scalable code practices}, delivering production-ready web, mobile and wearable apps.
-        \item Strong foundation in software engineering, with proven ability to design efficient systems and deliver high-quality solutions in collaborative teams.
-    \end{highlights}
-\end{onecolentry}
 
+Backend-focused engineer with production experience building Go-based REST APIs, authentication systems, and scalable backend services. Capable of delivering full-stack solutions using React, Next.js, and Flutter. Strong foundation in clean architecture, database design, API integration, and Docker-based deployment.
 
-\vspace{-0.1cm}
-% Experience
+% ---------------- Experience ----------------
 \section{Experience}
 
-\begin{twocolentry}{Feb 2025 – Present}
-    \textbf{Full Stack Developer}, Fordel Studios (Onsite) 
-    \href{https://Fordelstudios.com/}{Fordelstudios.com} $\cdot$
-    \href{https://apps.apple.com/in/app/emsigner-sign-electronically/id1246670687?platform=appleWatch}{App Store Link} $\cdot$
-    \href{https://formula.yellowchalk.dev/}{Web App Link}
-\end{twocolentry}
-\begin{onecolentry}
-    \begin{highlights}
-        \item Spearheaded Flutter app with \textbf{clean architecture and scalable code}, achieving 5,000+ active users with 98\% crash-free sessions; v2 in progress with more complex features. 
-        \item The release contributed to a measurable increase in the value of the company's stock.
-        \item Architected Golang back-end services with rapid development cycles, reducing API response time by 25\% and improving reliability.
-        \item Optimized React-Node.js e-Commerce platform, integrating with complex third-party APIs and reducing page load times by 30\%.
-        \item Delivered the Apple Watch app in Swift, expanding the product ecosystem to wearable platforms.
-    \end{highlights}
-\end{onecolentry}
+\textbf{Software Development Engineer (SDE 1)} — Fordel Studios \hfill Feb 2025 -- Present  
+\begin{tightitem}
+\item Implemented and integrated Golang REST APIs for production web and mobile applications.
+\item Integrated third-party services including payment gateways and verification APIs.
+\item Optimized PostgreSQL queries through indexing and schema improvements.
+\item Contributed to Flutter and React feature development in Agile sprints.
+\end{tightitem}
+
+\textbf{Full Stack Developer Intern} — Fordel Studios \hfill Aug 2024 -- Jan 2025  
+\begin{tightitem}
+\item Refactored backend APIs and improved database query structures.
+\item Built additional endpoints supporting new frontend features.
+\item Assisted in debugging and maintaining production issues.
+\end{tightitem}
+
+% ---------------- Key Projects ----------------
+\section{Key Projects}
+
+\textbf{FormulaShop — E-commerce Platform (Fordel Studios)}  
+\begin{tightitem}
+\item Contributed to API integration and frontend development.
+\item Integrated payment services and improved product listing workflows.
+\item Stack: React / Next.js, Node.js, REST APIs
+\end{tightitem}
+
+\textbf{emSigner — Digital Signature Platform (Fordel Studios)}  
+\begin{tightitem}
+\item Integrated Aadhaar verification and payment gateway APIs.
+\item Implemented structured request validation and API handling logic.
+\item Stack: Flutter, Go / Node APIs
+\end{tightitem}
+
+\textbf{ZenliAI — AI Content Platform (Freelance)}  
+\begin{tightitem}
+\item Architected Go backend using clean architecture principles.
+\item Implemented asynchronous job processing using Redis and Asynq.
+\item Built React frontend for content workflows.
+\item Stack: Go, PostgreSQL, Redis, React, Docker
+\end{tightitem}
+
+\textbf{Astra Terra Properties — Real Estate Platform (Dubai Client)}  
+\begin{tightitem}
+\item Migrated legacy PHP website to modern Next.js application.
+\item Integrated Pixxi CRM and implemented dynamic property filtering.
+\item Stack: Next.js, TypeScript, Pixxi CRM
+\end{tightitem}
+
+\textbf{Dooars Dil — Location-Based Dating Application (Personal)}  
+\begin{tightitem}
+\item Developed backend services for user authentication, profile management, and location-based matching.
+\item Designed relational database schema and implemented filtering logic using Go and PostgreSQL.
+\item Built REST APIs to support user discovery and interaction workflows.
+\end{tightitem}
 
 
-\begin{twocolentry}{Aug 2024 – Jan 2025}
-    \textbf{Full Stack Developer Intern}, Fordel Studios (Onsite) \href{https://Fordelstudios.com/}{Fordelstudios.com}
-\end{twocolentry}
-\begin{onecolentry}
-    \begin{highlights}
-        \item Enhanced back-end API and database integration, improving data retrieval speed.
-        \item Actively participated in Agile sprints and code reviews, raising team velocity.
-    \end{highlights}
-\end{onecolentry}
+\textbf{Vayuroom — WebRTC Platform (Personal)}  
+\begin{tightitem}
+\item Developed peer-to-peer WebRTC video system with Firebase signaling.
+\item Stack: React, WebRTC, Firebase
+\end{tightitem}
 
-\vspace{-0.1cm}
-% Projects
-\section{Projects}
+% ---------------- Skills ----------------
+\section{Technical Skills}
 
-\begin{twocolentry}{\href{https://cilytracker.web.app/}{cilytracker.web.app}}
-    \textbf{Cily Tracker – Academic Resource Platform}
-\end{twocolentry}
-\begin{onecolentry}
-    \begin{highlights}
-        \item Built web app for NBU students to access syllabus and past exam papers.
-        \item Designed a clean interface for academic progress tracking.
-        \item \textbf{Stack:} HTML, js, Firebase
-        \item Live Demo: \href{https://cilytracker.web.app/}{https://cilytracker.web.app/}
-    \end{highlights}
-\end{onecolentry}
+\textbf{Backend:} Go (goroutines, channels), REST APIs, JWT, Redis, PostgreSQL (schema design, indexing) \\
+\textbf{Frontend:} React, Next.js, TypeScript \\
+\textbf{Mobile:} Flutter, Swift \\
+\textbf{DevOps:} Docker, Firebase, AWS (basic), Git \\
+\textbf{Concepts:} Clean Architecture, Concurrency, API Integration, Database Design
 
-\begin{twocolentry}{\href{https://marketplace.visualstudio.com/items?itemName=rokiroy.commento}{Marketplace Link}}
-    \textbf{Commento – VS Code Extension}
-\end{twocolentry}
-\begin{onecolentry}
-    \begin{highlights}
-        \item Developed extension using Google Gemini AI for auto-generating code comments.
-        \item Improved readability of code and developer productivity.
-        \item \textbf{Stack:} TypeScript, VS Code API, Gemini AI, Node.js
-        \item Marketplace: \href{https://marketplace.visualstudio.com/items?itemName=rokiroy.commento}{https://marketplace.visualstudio.com/rokiroy.commento}
-    \end{highlights}
-\end{onecolentry}
-
-\begin{twocolentry}{\href{https://github.com/RoyRoki/LetsGo}{github.com/RoyRoki/LetsGo}}
-    \textbf{LetsGo – Tag-Based Chatting App}
-\end{twocolentry}
-\begin{onecolentry}
-    \begin{highlights}
-        \item Built real-time chat app using Golang microservices.
-        \item Used gRPC + Protocol buffers for sub-200ms message latency.
-        \item \textbf{Stack:} Golang, Microservices, gRPC, Protobuf, Docker \end{highlights}
-\end{onecolentry}
-
-\vspace{-0.2cm}
-% Technologies
-\section{Technologies}
-\begin{onecolentry}
-    \textbf{Languages:} Golang, Java (Spring Boot), JavaScript (ES6+), TypeScript, Swift, Dart
-\end{onecolentry}
-\begin{onecolentry}
-    \textbf{Frameworks \& Tools:} React.js, Node.js, Flutter, Spring Boot, MongoDB, PostgreSQL, Docker, AWS, Firebase, gRPC, CI/CD
-\end{onecolentry}
-
-\vspace{-0.2cm}
+% ---------------- Education ----------------
 \section{Education}
-\begin{twocolentry}{Sept 2024 – May 2027}
-    \textbf{University of North Bengal}, BCA (pursuing), CGPA: 8.0
-\end{twocolentry}
 
+\textbf{University of North Bengal} — BCA \hfill Expected May 2026
 
 \end{document}
-
