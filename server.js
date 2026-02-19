@@ -47,6 +47,7 @@ app.get('/md', (req, res) => {
 app.get('/json', (req, res) => {
     const resumeData = {
         name: "Roki Roy",
+        url: "https://resume.rokiroy.in",
         title: "Backend Engineer (Go, Distributed Systems, Real-Time Systems)",
         contact: {
             location: "Siliguri",
