@@ -2,8 +2,8 @@
 
 \usepackage[
     ignoreheadfoot,
-    top=0.6cm,
-    bottom=0.6cm,
+    top=0.55cm,
+    bottom=0.55cm,
     left=1.0cm,
     right=1.0cm
 ]{geometry}
@@ -27,14 +27,16 @@
 \pagestyle{empty}
 \setcounter{secnumdepth}{0}
 \setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
 
-\titleformat{\section}{\bfseries\large}{}{0pt}{}[\titlerule]
-\titlespacing{\section}{0pt}{0.08cm}{0.2cm}
+% Tight Sections
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{2pt}\titlerule]
+\titlespacing{\section}{0pt}{8pt}{6pt}
 
+% Tight Bullets
 \renewcommand\labelitemi{\small$\bullet$}
-
 \newenvironment{tightitem}{
-    \begin{itemize}[topsep=0pt, itemsep=0pt, parsep=0.3pt, leftmargin=10pt]
+    \begin{itemize}[topsep=1pt, itemsep=0.5pt, parsep=0pt, leftmargin=10pt]
 }{
     \end{itemize}
 }
@@ -43,8 +45,8 @@
 
 % ---------------- Header ----------------
 \begin{center}
-{\fontsize{22pt}{22pt}\selectfont \textbf{Roki Roy}} \\[3pt]
-Frontend Engineer (Next.js, 3D Web, High-Performance UI) \\[3pt]
+{\fontsize{22pt}{22pt}\selectfont \textbf{Roki Roy}} \\[2pt]
+Frontend Developer\\[2pt]
 \href{https://royroki.github.io/wowfy}{Portfolio} \textbullet\
 \href{https://github.com/royroki}{GitHub} \textbullet\
 \href{https://linkedin.com/in/rokiroy}{LinkedIn} \\
@@ -54,57 +56,49 @@ rokiroydev@gmail.com \textbullet\ +91 9800 881 300 \textbullet\ Siliguri, India
 % ---------------- Summary ----------------
 \section{Summary}
 
-Frontend-focused engineer specializing in building high-performance, interactive web experiences using Next.js, React, and GSAP. Expert in crafting complex admin dashboards, immersive 3D web applications, and responsive e-commerce platforms. Deep understanding of modern CSS, animation libraries, and state management for scalable production applications.
+Frontend engineer building high-performance web applications using Next.js and React. Experienced in complex dashboards, interactive 3D experiences, and production e-commerce systems. Strong focus on performance optimization, scalable UI architecture, and Core Web Vitals.
 
 % ---------------- Experience ----------------
 \section{Experience}
 
 \textbf{Software Development Engineer (SDE 1)} — Fordel Studios \hfill Feb 2025 -- Present  
 \begin{tightitem}
-\item Led frontend development for high-traffic web applications using Next.js and Tailwind CSS.
-\item integrated complex third-party APIs (Payment Gateways, Maps) into seamless UI flows.
-\item Optimized core web vitals and rendering performance, reducing LCP by 40\%.
-\item Collaborated with designers to implement pixel-perfect, responsive UI components.
+\item Led frontend development for production Next.js applications.
+\item Integrated payment gateways and map APIs into optimized UI workflows.
+\item Improved Core Web Vitals, reducing LCP by 40\%.
+\item Built reusable, responsive UI systems with Tailwind CSS.
 \end{tightitem}
 
 \textbf{Full Stack Developer Intern} — Fordel Studios \hfill Aug 2024 -- Jan 2025  
 \begin{tightitem}
-\item Built and deployed responsive frontend features for production e-commerce platforms.
-\item Refactored legacy React codebases to use modern hooks and state management patterns.
+\item Delivered responsive frontend features for live e-commerce platforms.
+\item Refactored legacy React codebases using hooks and modern state management.
 \end{tightitem}
 
-% ---------------- Key Projects ----------------
-\section{Key Projects}
+% ---------------- Projects ----------------
+\section{Projects}
 
-\href{https://we-care-packages-admin.vercel.app/}{\textbf{We Care Packages — Travel Agency Admin Panel}}  
+\href{https://pathsathi.vercel.app/}{\textbf{PathSathi — Interactive Travel Platform}}  
 \begin{tightitem}
-\item Architected a comprehensive admin dashboard for managing travel packages, bookings, and user data.
-\item Implemented complex data grids with sorting, filtering, and bulk actions using React Table.
-\item Designed role-based access control (RBAC) and secure authentication flows.
-\item Stack: Next.js, Tailwind CSS, TypeScript, REST APIs
+\item Built scroll-driven storytelling experience using GSAP and Lenis.
+\item Integrated interactive map components with smooth animations.
+\item Optimized rendering for consistent 60fps mobile performance.
+\item Stack: Next.js 14, GSAP, Framer Motion, Firebase
 \end{tightitem}
 
-\href{https://pathsathi.vercel.app/}{\textbf{PathSathi — Immersive Travel Storytelling Platform}}  
+\href{https://theformulashop.com/}{\textbf{The Formula Shop — E-commerce Platform}}  
 \begin{tightitem}
-\item Developed a scroll-driven storytelling experience for travel routes using GSAP and Lenis for smooth scrolling.
-\item Created interactive 3D map integrations and scroll-triggered animations to enhance user engagement.
-\item Optimized asset loading and animation performance for 60fps experiences on mobile devices.
-\item Stack: Next.js 14, GSAP, Framer Motion, Firebase, Tailwind CSS
-\end{tightitem}
-
-\href{https://theformulashop.com/}{\textbf{The Formula Shop — Production E-commerce Platform}}  
-\begin{tightitem}
-\item Shipped a full-featured e-commerce platform with 300+ SKUs and dynamic cart management.
-\item Implemented client-side caching and optimistic UI updates for instant interactions.
-\item Achieved sub-2s page loads and 90+ Lighthouse performance scores.
+\item Shipped production e-commerce platform with 300+ SKUs.
+\item Implemented client-side caching and optimized cart flows.
+\item Achieved sub-2s page loads and 90+ Lighthouse scores.
 \item Stack: Next.js, Tailwind CSS, Redux Toolkit
 \end{tightitem}
 
 \href{https://www.astraterra.ae/}{\textbf{Astra Terra Properties — Real Estate Platform}}  
 \begin{tightitem}
-\item Built a map-based real estate search engine with advanced filtering and dynamic clustering.
-\item Integrated Leaflet Maps with custom markers and GSAP transitions for property cards.
-\item Stack: Next.js, TypeScript, GSAP, Leaflet Maps
+\item Built map-based property search with dynamic clustering.
+\item Implemented advanced filtering and animated property transitions.
+\item Stack: Next.js, TypeScript, GSAP, Leaflet
 \end{tightitem}
 
 \href{https://github.com/RoyRoki/vayuroom}{\textbf{Vayuroom — Privacy-First WebRTC Video Platform}}  
@@ -115,21 +109,21 @@ Frontend-focused engineer specializing in building high-performance, interactive
 \item Stack: React, WebRTC, Firebase, TypeScript, Cryptography (E2EE)
 \end{tightitem}
 
-\href{https://rokiroy.in}{\textbf{Wowfy — 3D Interactive Portfolio}}  
+\href{https://rokiroy.in}{\textbf{Wowfy — 3D Portfolio}}  
 \begin{tightitem}
-\item Designed and developed an immersive 3D portfolio website showcasing projects and skills.
-\item Utilized Three.js/React Three Fiber for interactive 3D elements and scene management.
-\item Stack: React, Three.js, React Three Fiber, Framer Motion
+\item Developed immersive 3D portfolio using React Three Fiber.
+\item Implemented interactive scenes and animation flows.
+\item Stack: React, Three.js, Framer Motion
 \end{tightitem}
 
 % ---------------- Skills ----------------
 \section{Technical Skills}
 
-\textbf{Frontend Code:} React.js, Next.js (App Router), TypeScript, JavaScript (ES6+), HTML5, CSS3 \\
-\textbf{Styling \& UI:} Tailwind CSS, SCSS, Framer Motion, GSAP (ScrollTrigger), CSS Modules, Shadcn UI \\
-\textbf{State Management:} Redux Toolkit, Zustand, React Context API \\
-\textbf{Tools \& Performance:} Webpack, Vite, Figma-to-Code, Responsive Design, Web Vitals Optimization \\
-\textbf{Backend Familiarity:} Golang, Node.js, Firebase, REST APIs \\
+\textbf{Frontend:} React.js, Next.js (App Router), TypeScript, JavaScript (ES6+) \\
+\textbf{UI \& Animation:} Tailwind CSS, GSAP, Framer Motion, SCSS \\
+\textbf{State:} Redux Toolkit, Zustand, Context API \\
+\textbf{Performance:} Web Vitals Optimization, Code Splitting, Lazy Loading \\
+\textbf{Backend Familiarity:} Golang, Node.js, Firebase, REST APIs
 \textbf{Mobile Familiarity:} Flutter (Dart), Swift
 
 % ---------------- Education ----------------
