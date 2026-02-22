@@ -79,26 +79,29 @@ Backend-focused engineer with production experience building Go-based REST APIs,
 
 \href{https://github.com/RoyRoki/Dooars_Dil}{\textbf{Dooars Dil — Location-Based Dating Application (Personal)}}  
 \begin{tightitem}
-\item Developed backend services for user authentication, profile management, and location-based matching.
-\item \textbf{Challenge:} Handling hyper-local matchmaking efficiently and supporting voice-first interactions.
-\item \textbf{Solution:} Designed relational schema with PostGIS for specific town clusters instead of generic radiuses, and built a voice-first messaging architecture supporting real-time voice notes.
-\item Built REST APIs to support user discovery and interaction workflows using Go and PostgreSQL.
+\item Developed backend services for user authentication, profile management, and location-based matching in Go.
+\item \textbf{Challenge:} Handling hyper-local matchmaking efficiently, filtering active users in real-time, and supporting low-latency voice-first interactions.
+\item \textbf{Solution:} Designed a highly optimized relational schema with PostGIS for specific town clusters instead of expensive generic radius queries.
+\item \textbf{Implementation:} Built a concurrent voice-first messaging architecture supporting real-time voice notes, utilizing goroutines for async audio processing and efficient database connection pooling.
+\item Stack: Go, PostgreSQL, PostGIS, REST APIs
 \end{tightitem}
 
 \href{https://github.com/RoyRoki/AI-CREATIVE-CONTENT-GENERATOR}{\textbf{ZenliAI — AI Content Platform (Freelance)}}  
 \begin{tightitem}
-\item Architected Go backend using clean architecture principles and built React frontend for content workflows.
-\item \textbf{Challenge:} Managing multiple generative API calls, merging responses, creating/editing PDFs, and handling user credits concurrently without blocking the UI.
-\item \textbf{Solution:} Implemented asynchronous job processing using Redis and Asynq for non-blocking content generation, alongside strict credit management and background process handling.
-\item Stack: Go, PostgreSQL, Redis, React, Docker
+\item Architected a scalable Go backend using clean architecture principles with dependency injection and repository patterns.
+\item \textbf{Challenge:} Managing long-running generative AI API calls, merging multi-modal responses, generating complex PDFs, and tracking user token credits accurately without blocking UI threads.
+\item \textbf{Solution:} Implemented a robust asynchronous job queue and worker pool using Redis and Asynq for non-blocking content generation and background task management.
+\item \textbf{Implementation:} Integrated transactional database operations to guarantee ACID compliance during credit deductions and handled WebSocket events for real-time progress updates to the React frontend.
+\item Stack: Go, PostgreSQL, Redis (Asynq queue), Docker, WebSockets
 \end{tightitem}
 
 \href{https://github.com/RoyRoki/vayuroom}{\textbf{Vayuroom — WebRTC Platform (Personal)}}  
 \begin{tightitem}
-\item Developed peer-to-peer WebRTC video system with Firebase signaling.
-\item \textbf{Challenge:} Handling secure chat and video call encryption securely without a central media server.
-\item \textbf{Solution:} Implemented a zero-knowledge, end-to-end encrypted architecture using WebRTC and DTLS-SRTP, using a custom mesh-network for small-group P2P calls.
-\item Stack: React, WebRTC, Firebase, Cryptography (E2EE)
+\item Developed peer-to-peer WebRTC video conferencing system with Firebase as the ephemeral signaling server.
+\item \textbf{Challenge:} Establishing secure chat and video call encryption across multiple peers without routing traffic through a central vulnerable media server.
+\item \textbf{Solution:} Implemented a zero-knowledge, end-to-end encrypted architecture using WebRTC Data Channels and DTLS-SRTP protocols.
+\item \textbf{Implementation:} Designed a custom mesh-networking routing algorithm for small-group P2P calls, ensuring cryptographic keys are exchanged out-of-band and never stored persistently.
+\item Stack: React, WebRTC, Firebase, Cryptography (E2EE), Mesh Networking
 \end{tightitem}
 
 
