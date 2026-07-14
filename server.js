@@ -53,7 +53,7 @@ app.get('/json', (req, res) => {
             location: "Siliguri",
             email: "rokiroydev@gmail.com",
             phone: "+91 9800 881 300",
-            website: "https://royroki.github.io/wowfy",
+            website: "https://rokiroy.in",
             linkedin: "https://linkedin.com/in/rokiroy",
             github: "https://github.com/royroki"
         },
